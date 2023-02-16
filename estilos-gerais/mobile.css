@@ -106,6 +106,11 @@ body {
     align-items: center;
     border: 2px solid rgb(96, 96, 96);
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.operaçoes:hover {
+    background-color: #ccc;
 }
 
 .operaçoes p {
@@ -131,6 +136,11 @@ body {
     align-items: center;
     border-radius: 5px;
     border: 2px solid grey;
+    cursor: pointer;
+}
+
+.operaçoesplus:hover {
+    background-color: #ccc;
 }
 
 .operaçoesplus p {
