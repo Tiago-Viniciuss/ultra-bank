@@ -39,6 +39,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 100px 0px 0px 0px;
     margin-bottom: 70px;
+    text-shadow: 1px 1px 1px black;
 }
 
 #principal {
@@ -55,6 +56,7 @@ body {
     margin: auto;
     width: 250px;
     height: 350px;
+    margin-bottom: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
