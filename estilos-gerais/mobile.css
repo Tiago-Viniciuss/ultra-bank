@@ -98,12 +98,13 @@ body {
 }
 
 .operaçoes {
-    width: 75px;
-    height: 75px;
-    background-color: white;
+    width: 85px;
+    height: 85px;
+    background-color: rgb(228, 228, 228);
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid rgb(96, 96, 96);
     border-radius: 5px;
 }
 
@@ -124,11 +125,12 @@ body {
 .operaçoesplus {
     width: 85px;
     height: 85px;
-    background-color: white;
+    background-color: rgb(228, 228, 228);
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 5px;
+    border: 2px solid grey;
 }
 
 .operaçoesplus p {
