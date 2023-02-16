@@ -99,7 +99,7 @@ body {
 
 .operaçoes {
     width: 75px;
-    height: 55px;
+    height: 75px;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -122,8 +122,8 @@ body {
 
 
 .operaçoesplus {
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     background-color: white;
     display: flex;
     justify-content: space-around;
