@@ -31,7 +31,7 @@ body {
     position: absolute;
     top: 3%;
     right: 0;
-    margin-right: 30px;
+    margin: 30px;
     font-size: 1.5em;
     font-weight: normal;
     cursor: pointer;
