@@ -5,9 +5,11 @@
 */
 
 body {
-    margin: 0px;
+    margin: 30px;
     padding: 0px;
     height: 100%;
+    border: 3px solid #C1292E;
+    border-radius: 3px;
 }
 
 #container {
@@ -16,7 +18,6 @@ body {
     padding: 5px;
     gap: 2px;
     grid-template-areas: 
-                'header header header'
                 'main main main'
                 'footer footer footer';
 }
