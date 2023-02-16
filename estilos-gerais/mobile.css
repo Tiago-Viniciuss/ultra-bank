@@ -31,8 +31,10 @@ body {
     position: absolute;
     top: 3%;
     right: 0;
+    margin: 20px;
     font-size: 1.5em;
     font-weight: bold;
+    cursor: pointer;
 }
 
 #menupessoal {
@@ -41,14 +43,18 @@ body {
     padding-left: 0px;
     height: 250px;
     width: 100%;
+    margin: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
-
+    
+    visibility: hidden;
     position: fixed;
-    top: 30%;
+    top: 0;
+    right: 0;
+
 }
 
 #menupessoal a {
@@ -65,6 +71,7 @@ body {
     width: 60px;
     padding: 10px;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 #main {
@@ -110,14 +117,15 @@ body {
     text-align: center;
     font-size: 1.4m;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .operaçoesplus {
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-radius: 5px;
 }

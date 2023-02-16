@@ -27,10 +27,10 @@ function menuPessoal() {
 
     var menupessoal = document.getElementById('menupessoal')
 
-    if (menupessoal.style.display == 'flex') {
-        menupessoal.style.display = 'none'
+    if (menupessoal.style.visibility == 'visible') {
+        menupessoal.style.visibility = 'hidden'
     } else {
-        menupessoal.style.display = 'flex'
+        menupessoal.style.visibility = 'visible'
     }
 
 }
@@ -39,10 +39,10 @@ function menuPessoal() {
 function retrairMenu() {
     var menu = document.getElementById('menupessoal')
 
-    if ( menu.style.display == 'flex') {
-        menu.style.display = 'none'
+    if ( menu.style.visibility == 'visible') {
+        menu.style.visibility = 'hidden'
     } else {
-        menu.style.display = 'flex'
+        menu.style.visibility = 'visible'
     }
 
 }
