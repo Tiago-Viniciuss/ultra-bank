@@ -16,10 +16,23 @@
         <header id="cabeçalho">
             <h1>Razor Bank</h1>
             <div id="saldo">R$1.200,00</div>
-            <span class="material-symbols-outlined" id="pessoal">
+            <span class="material-symbols-outlined" id="pessoal" onclick="menuPessoal()">
                 more_vert
                 </span>
         </header>
+        <menu id="menupessoal">
+            <span class="material-symbols-outlined" id="retrairmenu" onclick="retrairMenu()">
+                remove
+                </span>
+            <a href="#">Minha Conta</a>
+            <hr color="grey" width="80%">
+            <a href="#">Preferências</a>
+            <hr color="grey" width="80%">
+            <a href="#">Notificações</a>
+            <hr color="grey" width="80%">
+            <a href="index.html">Sair do App</a>
+            <hr color="grey" width="80%">
+        </menu>
         <main id="main">
             <section id="principal">
                     <div id="op1" class="operaçoes">

@@ -21,3 +21,28 @@ function abrirMenu() {
     }
 
 }
+
+
+function menuPessoal() {
+
+    var menupessoal = document.getElementById('menupessoal')
+
+    if (menupessoal.style.display == 'flex') {
+        menupessoal.style.display = 'none'
+    } else {
+        menupessoal.style.display = 'flex'
+    }
+
+}
+
+
+function retrairMenu() {
+    var menu = document.getElementById('menupessoal')
+
+    if ( menu.style.display == 'flex') {
+        menu.style.display = 'none'
+    } else {
+        menu.style.display = 'flex'
+    }
+
+}
