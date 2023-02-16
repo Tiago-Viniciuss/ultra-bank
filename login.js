@@ -9,3 +9,15 @@ function fazerLogin() {
     }
 }
 
+
+function abrirMenu() {
+
+    var operacoesplus = document.getElementById('menuopcoes')
+
+    if (operacoesplus.style.display == 'flex') {
+        operacoesplus.style.display = 'none'
+    } else {
+        operacoesplus.style.display = 'flex'
+    }
+
+}

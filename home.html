@@ -7,14 +7,61 @@
     <link rel="stylesheet" href="estilos-gerais/mobile.css">
     <link rel="stylesheet" href="estilos-gerais/tablet.css" media="(min-width: 768px) and (max-width: 1200px)">
     <link rel="stylesheet" href="desktop.css" media="(min-width: 1200px)">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Razor Bank</title>
 </head>
 <body>
     <div id="container">
         <header id="cabeçalho">
             <h1>Razor Bank</h1>
+            <div id="saldo">R$1.200,00</div>
         </header>
-        <main id="principal">MAIN</main>
+        <main id="main">
+            <section id="principal">
+                    <div id="op1" class="operaçoes">
+                        <p>Extrato</p>
+                    </div>
+                    <div id="op2" class="operaçoes">
+                        <p>Pix</p>
+                    </div>
+                    <div id="op3" class="operaçoes">
+                        <p>Investimentos</p>
+                    </div>
+                    <div id="op4" class="operaçoes">
+                        <p>Cartões</p>
+                    </div>
+                    <div id="op5" class="operaçoes">
+                        <p>Transferências</p>
+                    </div>
+                    <div id="op6" class="operaçoes">
+                        <p>Pagamentos</p>
+                    </div>
+                </section>
+            <span class="material-symbols-outlined" id="botaomenu" onclick="abrirMenu()">
+                    expand_more
+            </span>    
+            <section id="menuopcoes">   
+                <div id="op7" class="operaçoesplus">
+                    <p>Recarga</p>
+                </div>
+                <div id="op8" class="operaçoesplus">
+                    <p>Depósito por cheque</p>
+                </div>
+                <div id="op9" class="operaçoesplus">
+                    <p>Empréstimo</p>
+                </div>
+                <div id="op10" class="operaçoesplus">
+                    <p>Câmbio</p>
+                </div>
+                <div id="op11" class="operaçoesplus">
+                    <p>Débito automático</p>
+                </div>
+                <div id="op12" class="operaçoesplus">
+                    <p>Vendas</p>
+                </div>
+            </section>
+        </main>
         <aside id="marketing">ASIDE</aside>
         <footer id="rodape">FOOTER</footer>
     </div>

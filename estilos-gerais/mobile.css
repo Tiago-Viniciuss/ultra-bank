@@ -27,16 +27,64 @@ body {
     grid-area: header;
 }
 
-#marketing {
-    grid-area: aside;
-    height: 50vh;
-    
+#main {
+    grid-area: main;
 }
 
 #principal {
-    grid-area: main;
-    height: 50vh;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
+
+
+#menuopcoes {
+    height: 200px;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.operaçoes {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.operaçoes p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.operaçoesplus {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.operaçoesplus p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#marketing {
+    grid-area: aside;
+    height: 30vh;
+}
+
 
 #rodape {
     grid-area: footer;
