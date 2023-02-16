@@ -18,13 +18,17 @@ body {
 }
 
 #container header, aside, main, footer {
-    background-color: #ccc;
-    border: 1px solid blue;
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0);
     padding: 20px;
 }
 
 #cabeçalho {
     grid-area: header;
+}
+
+#cabeçalho h1 {
+    color: #C1292E;
 }
 
 #pessoal {

@@ -32,12 +32,12 @@ body {
     margin: 0px;
 }
 
-#cabeçalho h1 {
-    font-size: 2.5em;
+#formbox h1 {
+    font-size: 2em;
     color: #C1292E;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 100px 0px 0px 0px;
-    margin: 0px;
+    margin-bottom: 70px;
 }
 
 #principal {
