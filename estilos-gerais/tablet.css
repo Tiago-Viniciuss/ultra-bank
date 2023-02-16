@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    display: grid;
+    background-color: rgb(119, 123, 51);
+    padding: 15px;
+    gap: 5px;
+    grid-template-areas: 
+                'header header header'
+                'main main main'
+                'aside aside aside'
+                'footer footer footer';
+}
+
+#container header, aside, main, footer {
+    background-color: #ccc;
+    border: 1px solid blue;
+    padding: 20px;
+}
+
+#cabeçalho {
+    grid-area: header;
+}
+
+#marketing {
+    grid-area: aside;
+    height: 50vh;
+    
+}
+
+#principal {
+    grid-area: main;
+    height: 50vh;
+}
+
+#rodape {
+    grid-area: footer;
+}

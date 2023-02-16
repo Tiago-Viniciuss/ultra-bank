@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos-tela-login/login-mobile.css">
+    <link rel="stylesheet" href="estilos-tela-login/login-mobile.css" media="(min-width: 768px) and (max-width: 1200px)">
+    <title>Razor Bank</title>
+</head>
+<body>
+    <div id="container">
+        <header id="cabeçalho">
+            <h1>Razor Bank</h1>
+        </header>
+        <main id="principal">
+            <form action="login.js" method="post" id="formbox">
+                <label for="usuario">Usuário</label><input type="number" name="usuario" id="usuario" placeholder="Digite sua conta"> 
+                <label for="senha">Senha</label><input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                <input type="submit" value="Entrar"  id="botaologin" onclick="fazerLogin(); return false">
+                <a href="#">Esqueci minha senha</a>
+            </form>
+        </main>
+        <footer id="rodape">
+            <p>
+                <a href="#">Abrir uma nova conta</a>
+            </p>
+        </footer>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

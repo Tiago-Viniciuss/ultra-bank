@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/*
+    Tela de login
+*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+#container {
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    gap: 2px;
+    grid-template-areas: 
+                'header header header'
+                'main main main'
+                'footer footer footer';
+}
+
+#container header, main, footer {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+#cabeçalho {
+    grid-area: header;
+    text-align: center;
+}
+
+#cabeçalho h1 {
+    font-size: 2em;
+    color: #C1292E;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#principal {
+    grid-area: main;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formbox {
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+#formbox label {
+    width: 200px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#usuario {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+#senha {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: lightgray;
+}
+
+#botaologin {
+    font-weight: bold;
+    color: white;
+    width: 130px;
+    margin-bottom: 20px;
+    background-color: #C1292E;
+    border-radius: 5px;
+}
+
+form a {
+    font-weight: bolder;
+    font-size: 0.9em;
+    color: #C1292E;
+    text-decoration: none;
+}
+
+#rodape {
+    grid-area: footer;
+    text-align: right;
+    padding: 0px;
+}
+
+#rodape a {
+    text-decoration: none;
+    color: #C1292E;
+    font-size: 1em;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+
+/*
+    --------------------------------------------------
+*/
