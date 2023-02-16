@@ -35,20 +35,24 @@ body {
     font-size: 2em;
     color: #C1292E;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 #principal {
     grid-area: main;
-    height: 250px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0px;
+    margin-top: 0px;
 }
 
 #formbox {
     margin: auto;
     width: 250px;
-    height: 250px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
