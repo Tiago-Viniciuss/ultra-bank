@@ -35,13 +35,13 @@ body {
     font-size: 2em;
     color: #C1292E;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 0px;
+    padding: 100px 0px 0px 0px;
     margin: 0px;
 }
 
 #principal {
     grid-area: main;
-    height: 400px;
+    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
