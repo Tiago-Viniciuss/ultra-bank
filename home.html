@@ -16,6 +16,9 @@
         <header id="cabeçalho">
             <h1>Razor Bank</h1>
             <div id="saldo">R$1.200,00</div>
+            <span class="material-symbols-outlined" id="pessoal">
+                more_vert
+                </span>
         </header>
         <main id="main">
             <section id="principal">
@@ -28,20 +31,22 @@
                     <div id="op3" class="operaçoes">
                         <p>Investimentos</p>
                     </div>
-                    <div id="op4" class="operaçoes">
-                        <p>Cartões</p>
-                    </div>
-                    <div id="op5" class="operaçoes">
-                        <p>Transferências</p>
-                    </div>
-                    <div id="op6" class="operaçoes">
-                        <p>Pagamentos</p>
-                    </div>
                 </section>
-            <span class="material-symbols-outlined" id="botaomenu" onclick="abrirMenu()">
-                    expand_more
-            </span>    
-            <section id="menuopcoes">   
+            <div id="abrirmenu">
+                <span class="material-symbols-outlined" id="botaomenu" onclick="abrirMenu()">
+                        expand_more
+                </span>
+            </div>  
+            <section id="menuopcoes">
+                <div id="op4" class="operaçoesplus">
+                    <p>Cartões</p>
+                </div>
+                <div id="op5" class="operaçoesplus">
+                    <p>Transferências</p>
+                </div>
+                <div id="op6" class="operaçoesplus">
+                    <p>Pagamentos</p>
+                </div> 
                 <div id="op7" class="operaçoesplus">
                     <p>Recarga</p>
                 </div>
@@ -62,7 +67,11 @@
                 </div>
             </section>
         </main>
-        <aside id="marketing">ASIDE</aside>
+        <aside id="marketing">
+            <div id="bolsadevalores" class="propaganda">BOLSA</div>
+            <div id="campanha" class="propaganda">CAMPANHA</div>
+            <div id="convideumamigo" class="propaganda">CONVIDE UM AMIGO</div>
+        </aside>
         <footer id="rodape">FOOTER</footer>
     </div>
     <script src="login.js"></script>

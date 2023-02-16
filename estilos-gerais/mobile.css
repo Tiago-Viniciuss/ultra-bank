@@ -27,12 +27,20 @@ body {
     grid-area: header;
 }
 
+#pessoal {
+    position: absolute;
+    top: 3%;
+    right: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 #main {
     grid-area: main;
 }
 
 #principal {
-    height: 200px;
+    height: 150px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -42,7 +50,7 @@ body {
 
 
 #menuopcoes {
-    height: 200px;
+    height: 400px;
     display: none;
     flex-direction: row;
     flex-wrap: wrap;
@@ -65,6 +73,13 @@ body {
     font-size: 14px;
 }
 
+
+#abrirmenu {
+    text-align: center;
+    font-size: 1.4m;
+    font-weight: bold;
+}
+
 .operaçoesplus {
     width: 65px;
     height: 65px;
@@ -82,9 +97,20 @@ body {
 
 #marketing {
     grid-area: aside;
-    height: 30vh;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.propaganda {
+    height: 170px;
+    width: 250px;
+    background-color: cornsilk;
+    border-radius: 5px;
+}
 
 #rodape {
     grid-area: footer;
