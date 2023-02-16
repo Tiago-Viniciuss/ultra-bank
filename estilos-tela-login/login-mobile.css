@@ -8,13 +8,14 @@ body {
     margin: 30px;
     padding: 0px;
     height: 100%;
-    border: 3px solid #C1292E;
+    border: 3px solid #ffffff;
     border-radius: 4px;
+    background-color: #C1292E;
 }
 
 #container {
     display: grid;
-    background-color: rgb(255, 255, 255);
+    background-color: #C1292E;
     padding: 5px;
     gap: 2px;
     grid-template-areas: 
@@ -35,7 +36,7 @@ body {
 
 #formbox h1 {
     font-size: 2em;
-    color: #C1292E;
+    color: #fffdfe;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 100px 0px 0px 0px;
     margin-bottom: 70px;
@@ -50,18 +51,19 @@ body {
     align-items: center;
     padding: 0px;
     margin-top: 0px;
+    background-color: #C1292E;
 }
 
 #formbox {
     margin: auto;
     width: 250px;
-    height: 350px;
+    height: 400px;
     margin-bottom: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: #C1292E;
     border-radius: 10px;
 }
 
@@ -89,17 +91,17 @@ body {
 
 #botaologin {
     font-weight: bold;
-    color: white;
+    color: #C1292E;
     width: 130px;
     margin-bottom: 20px;
-    background-color: #C1292E;
+    background-color: #ffffff;
     border-radius: 5px;
 }
 
 form a {
     font-weight: bolder;
     font-size: 0.9em;
-    color: #C1292E;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -107,6 +109,7 @@ form a {
     grid-area: footer;
     text-align: right;
     padding: 0px;
+    
 }
 
 #rodape a {
