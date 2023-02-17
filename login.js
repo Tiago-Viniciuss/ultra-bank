@@ -1,13 +1,12 @@
-let nome = document.getElementById('usuario')
+/*let nome = document.getElementById('usuario')
 
 let saudacao = document.getElementById('saudacao')
 
-saudacao.innerHTML = `Seja bem-vindo ${nome}`
-
+saudacao.innerHTML = `ola seja bem vindo ${nome}`*/
 
 
 function fazerLogin() {
-
+    let nome = document.getElementById('usuario').value
     const senha = document.getElementById('senha').value
    
     if (senha == '1234') {
@@ -17,8 +16,6 @@ function fazerLogin() {
     }
 
 }
-
-
 
 function esconderSaldo() {
     var saldo = document.getElementById('saldo')
