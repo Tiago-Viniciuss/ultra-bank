@@ -1,9 +1,3 @@
-/*let nome = document.getElementById('usuario')
-
-let saudacao = document.getElementById('saudacao')
-
-saudacao.innerHTML = `ola seja bem vindo ${nome}`*/
-
 
 function fazerLogin() {
     let nome = document.getElementById('usuario').value
