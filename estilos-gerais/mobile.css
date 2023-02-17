@@ -13,11 +13,10 @@ body {
     grid-template-areas: 
                 'header header header'
                 'main main main'
-                'aside aside aside'
-                'footer footer footer';
+                'aside aside aside';
 }
 
-#container header, aside, main, footer {
+#container header, aside, main {
     background-color: #ffffff;
     border: 1px solid rgb(0, 0, 0);
     padding: 20px;
@@ -27,19 +26,42 @@ body {
     grid-area: header;
 }
 
-#cabeçalho h1 {
-    color: #C1292E;
+#container header {
+    background-color: #C1292E;
+    border-radius: 5px;
 }
 
-#saldo {
-    font-size: 1.2em;
+#cabeçalho h1 {
+    color: #ffffff;
+}
+
+#boxsaldo {
+    font-size: 1.3em;
     font-weight: bold;
     background-color: rgb(228, 228, 228);
     border-radius: 3px;
-    width: 100px;
-    padding: 5px;
+    width: 140px;
+    padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
 }
+
+#saldo {
+    padding: 0px;
+    margin: 0px;
+    visibility: visible;
+}
+
+#escondersaldo {
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+#escondersaldo:hover {
+    cursor: pointer;
+}
+
 
 #pessoal {
     position: absolute;
@@ -50,6 +72,7 @@ body {
     font-size: 1.5em;
     font-weight: normal;
     cursor: pointer;
+    color: #ffffff;
 }
 
 #menupessoal {
@@ -75,10 +98,19 @@ body {
 #menupessoal a {
     text-decoration: none;
     margin: auto;
+    padding: 10px;
     width: 150px;
     height: 10px;
+    font-size: 1.1em;
     font-weight: bold;
+    color: #C1292E;
 }
+
+#menupessoal #logout {
+    font-size: 1.2em;
+    color: black;
+}
+
 
 #retrairmenu {
     text-align: center;
@@ -91,6 +123,7 @@ body {
 
 #main {
     grid-area: main;
+    border-radius: 5px;
 }
 
 #principal {
@@ -190,7 +223,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: end;
-    border: 2px solid rgb(96, 96, 96);
+    border: 2px solid rgb(127, 1, 1);
     border-radius: 5px;
     cursor: pointer;
 }
@@ -201,7 +234,7 @@ body {
 
 .operaçoes p {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 10px;
     color: white;
     padding: 0px;
     margin: 0px;
@@ -224,7 +257,7 @@ body {
     justify-content: center;
     align-items: end;
     border-radius: 5px;
-    border: 2px solid grey;
+    border: 2px solid rgb(127, 1, 1);
     cursor: pointer;
 }
 
@@ -234,7 +267,7 @@ body {
 
 .operaçoesplus p {
     font-weight: bold;
-    font-size: 12px;
+    font-size: 10px;
     color: white;
     padding: 0px;
     margin: 0px;
@@ -242,7 +275,7 @@ body {
 
 
 #marketing {
-    background-color: #C1292E;
+    background-color: #e6e6e6;
     grid-area: aside;
     height: 600px;
     display: flex;
@@ -250,6 +283,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    border-radius: 5px;
 }
 
 .propaganda {
@@ -260,6 +294,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: end;
+}
+
+.propaganda:hover {
+    cursor: pointer;
 }
 
 .propaganda p {
@@ -287,9 +325,4 @@ body {
     background-image: url(../imagens/convideamigo.jpg);
     background-position: center;
     background-size: cover;
-}
-
-
-#rodape {
-    grid-area: footer;
 }

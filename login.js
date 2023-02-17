@@ -10,6 +10,18 @@ function fazerLogin() {
 }
 
 
+function esconderSaldo() {
+    var saldo = document.getElementById('saldo')
+    var escondersaldo = document.getElementById('escondersaldo')
+
+    if (saldo.style.visibility == 'visible') {
+        saldo.style.visibility = 'hidden'
+    } else {
+        saldo.style.visibility = 'visible'
+    }
+}
+
+
 function abrirMenu() {
 
     var operacoesplus = document.getElementById('menuopcoes')

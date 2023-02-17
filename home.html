@@ -15,7 +15,11 @@
     <div id="container">
         <header id="cabeçalho">
             <h1>Ultra Bank</h1>
-            <div id="saldo">R$1.200,00</div>
+            <div id="boxsaldo">
+                <p id="saldo">R$1.200,00</p>
+                 <span class="material-symbols-outlined" id="escondersaldo" onclick="esconderSaldo()">
+                visibility_off
+                </span></div>
             <span class="material-symbols-outlined" id="pessoal" onclick="menuPessoal()">
                 settings
                 </span>
@@ -35,7 +39,7 @@
             <hr color="grey" width="80%">
             <a href="#">Sobre</a>
             <hr color="grey" width="80%">
-            <a href="index.html">Sair do App</a>
+            <a href="index.html" id="logout">Sair do App</a>
             <hr color="grey" width="80%">
             <span class="material-symbols-outlined" id="retrairmenu" onclick="retrairMenu()">
                 remove
@@ -99,7 +103,7 @@
                 <p>Convide um Amigo</p>
             </div>
         </aside>
-        <footer id="rodape">FOOTER</footer>
+        <footer id="rodape"></footer>
     </div>
     <script src="login.js"></script>
 </body>
