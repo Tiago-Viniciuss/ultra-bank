@@ -1,8 +1,8 @@
-/*let nome = document.getElementById('usuario')
+let nome = document.getElementById('usuario')
 
 let saudacao = document.getElementById('saudacao')
 
-saudacao.innerHTML = `Seja bem-vindo ${nome}`*/
+saudacao.innerHTML = `Seja bem-vindo ${nome}`
 
 
 
