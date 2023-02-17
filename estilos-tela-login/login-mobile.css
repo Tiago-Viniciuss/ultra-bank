@@ -8,14 +8,14 @@ body {
     margin: 30px;
     padding: 0px;
     height: 100%;
-    border: 3px solid #C1292E;
-    border-radius: 4px;
+    background-color: #C1292E;
 }
 
 #container {
     display: grid;
     background-color: rgb(255, 255, 255);
     padding: 5px;
+    border-radius: 15px;
     gap: 2px;
     grid-template-areas: 
                 'main main main'
@@ -62,7 +62,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-    border-radius: 10px;
 }
 
 #formbox label {
