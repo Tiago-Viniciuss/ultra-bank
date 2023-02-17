@@ -103,7 +103,7 @@ body {
 }
 
 #op1 {
-    background-image: url(../imagens/extrato.png);
+    background-image: url(../imagens/cartoes.png);
     background-position: center;
     background-size: cover;
 }
@@ -121,7 +121,7 @@ body {
 }
 
 #op4 {
-    background-image: url(../imagens/cartoes.png);
+    background-image: url(../imagens/extrato.png);
     background-position: center;
     background-size: cover;
 }
@@ -156,6 +156,23 @@ body {
     background-size: cover;
 }
 
+#op10 {
+    background-image: url(../imagens/cambio.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op11 {
+    background-image: url(../imagens/seguros.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op12 {
+    background-image: url(../imagens/e-loja.png);
+    background-position: center;
+    background-size: cover;
+}
 
 #menuopcoes {
     height: 400px;
@@ -225,6 +242,7 @@ body {
 
 
 #marketing {
+    background-color: #C1292E;
     grid-area: aside;
     height: 600px;
     display: flex;
