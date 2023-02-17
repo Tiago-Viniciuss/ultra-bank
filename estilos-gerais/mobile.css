@@ -102,6 +102,60 @@ body {
     align-items: center;
 }
 
+#op1 {
+    background-image: url(../imagens/extrato.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op2 {
+    background-image: url(../imagens/pix.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op3 {
+    background-image: url(../imagens/investimento.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op4 {
+    background-image: url(../imagens/cartoes.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op5 {
+    background-image: url(../imagens/transferencias.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op6 {
+    background-image: url(../imagens/pagamentos.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op7 {
+    background-image: url(../imagens/recarga.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op8 {
+    background-image: url(../imagens/boletos.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op9 {
+    background-image: url(../imagens/emprestimos.png);
+    background-position: center;
+    background-size: cover;
+}
+
 
 #menuopcoes {
     height: 400px;
@@ -118,7 +172,7 @@ body {
     background-color: #C1292E;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     border: 2px solid rgb(96, 96, 96);
     border-radius: 5px;
     cursor: pointer;
@@ -130,7 +184,10 @@ body {
 
 .operaçoes p {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
 }
 
 
@@ -147,8 +204,8 @@ body {
     height: 85px;
     background-color: #C1292E;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: end;
     border-radius: 5px;
     border: 2px solid grey;
     cursor: pointer;
@@ -160,8 +217,12 @@ body {
 
 .operaçoesplus p {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
 }
+
 
 #marketing {
     grid-area: aside;
