@@ -460,6 +460,7 @@ header {
 
 #bloquearcartao:hover {
     background-color: #ec4e53;
+    cursor: pointer;
 }
 
 #configurarcartao {
@@ -474,10 +475,11 @@ header {
 
 #configurarcartao:hover {
     background-color: #ec4e53;
+    cursor: pointer;
 }
 
 #menuconfigcartao {
-    width: 80%;
+    width: 85%;
     background-color: rgb(234, 232, 232);
     height: 500px;
     display: flex;
@@ -505,6 +507,10 @@ header {
     padding: 4px;
     border-radius: 10px 10px 10px 0px;
     cursor: pointer;
+}
+
+#menuconfigcartao button:hover {
+    background-color: #ec4e53;
 }
 
 #menuconfigcartao p {
