@@ -407,9 +407,29 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: block;
 }
 
+
 #cartaocredito:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.814);
+}
+
+#cartaocredito2 {
+    width: 240px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.814);
+    background-color: #ffffff;
+    background-image: url(../imagens/fundocartao.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#cartaocredito2:hover {
     transform: scale(1.1);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.814);
 }
@@ -450,4 +470,8 @@ header {
     font-size: 2em;
     background-color: #C1292E;
     color: white;
+}
+
+#configurarcartao:hover {
+    background-color: #ec4e53;
 }
