@@ -78,3 +78,29 @@ function abrirConfig() {
 
 }
 
+function versoCartao() {
+    var versocartao = document.getElementById('cartaocredito')
+    var botaofrente = document.getElementById('botaofrente')
+    var botaofundo = document.getElementById('botaofundo')
+
+    if (versocartao.style.backgroundImage = 'url(../imagens/frentecartao.png)') {
+          versocartao.style.backgroundImage = 'url(../imagens/fundocartao.png)' 
+    }
+
+    botaofrente.style.visibility = 'visible'
+    botaofundo.style.visibility = 'hidden'
+    
+}
+
+function frenteCartao() {
+    var versocartao = document.getElementById('cartaocredito')
+    var botaofundo = document.getElementById('botaofundo')
+
+
+    if (versocartao.style.backgroundImage = 'url(../imagens/fundocartao.png)'){
+        versocartao.style.backgroundImage = 'url(../imagens/frentecartao.png)'
+    }
+  
+    botaofrente.style.visibility = 'hidden'
+    botaofundo.style.visibility = 'visible'
+}

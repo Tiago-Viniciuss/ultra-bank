@@ -35,8 +35,6 @@ header {
     
 }
 
-
-
 #escondersaldo {
     font-weight: bold;
     color: grey;
@@ -61,13 +59,11 @@ header {
     font-weight: normal;
     cursor: pointer;
     color: #ffffff;
-}
-
-#configbtn {
-    font-size: 1.1em;
     background-color: transparent;
     border: none;
 }
+
+
 
 #configuracoes {
     background-color: white;
@@ -331,7 +327,6 @@ header {
 
 #sectioncartoes {
     width: 100%;
-    height: 700px;
     background-color: white;
 }
 
@@ -356,14 +351,56 @@ header {
 #fundocartaocredito {
     width: 100%;
     height: 300px;
-    background-color: gray;
+    background-color: rgb(233, 233, 233);
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;
+}
+
+#fundocartaocredito button {
+    height: 60px;
+}
+
+#botaofrente {
+    visibility: hidden;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0px;
+}
+
+#botaofundo {
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 #cartaocredito {
-    width: 280px;
-    height: 170px;
+    width: 240px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.814);
     background-color: #ffffff;
+    background-image: url(../imagens/frentecartao.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cartaocredito:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.814);
+}
+
+.footergeral {
+    background-color: #C1292E;
+    margin: auto;
+    height: 300px;
+    width: 90%;
+    border-radius: 10px;
+    
 }
