@@ -419,8 +419,12 @@ header {
     text-align: center;
 }
 
-#configcartao label {
-    padding: 10px 25px;
+#labelcartao {
+    margin: auto;
+    width: 39%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-weight: bold;
 }
 
@@ -434,7 +438,9 @@ header {
     color: white;
 }
 
-
+#bloquearcartao:hover {
+    background-color: #ec4e53;
+}
 
 #configurarcartao {
     height: 80px;
