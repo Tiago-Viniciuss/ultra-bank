@@ -146,6 +146,11 @@ form a {
     margin-bottom: 10px;
 }
 
+#senhabtn {
+    background-color: transparent;
+    border: none;
+}
+
 #label {
     font-weight: bold;
     margin-top: 50px;

@@ -141,6 +141,13 @@ body {
     align-items: center;
 }
 
+#principal button {
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    border: none;
+}
+
 #op1 {
     background-image: url(../imagens/cartoes.png);
     background-position: center;
@@ -338,3 +345,9 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+
+/*
+    Seção Cartões
+*/
+
