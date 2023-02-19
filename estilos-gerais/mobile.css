@@ -56,6 +56,7 @@ body {
     font-size: 0.9em;
     font-weight: bold;
     padding-left: 10px;
+    color: grey;
 }
 
 #escondersaldo:hover {
@@ -214,6 +215,12 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+}
+
+#abrirmenu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .operaçoes {

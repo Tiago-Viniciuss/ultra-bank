@@ -93,6 +93,7 @@ body {
     margin-bottom: 20px;
     background-color: #C1292E;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 form a {
@@ -166,15 +167,20 @@ form a {
     color: white;
     padding: 2px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #dadosbutton:hover {
     background-color: #e14b50;
+    cursor: pointer;
 }
 
-#dadosdeacesso p {
+
+
+#dadosdeacesso  {
     text-align: center;
     font-size: 0.9em;
+    cursor: pointer;
 }
 
 
@@ -182,4 +188,5 @@ form a {
     color: #C1292E;
     font-weight: bold;
     font-size: 2em;
+    cursor: pointer;
 }

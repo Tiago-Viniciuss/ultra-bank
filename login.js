@@ -39,6 +39,12 @@ function esconderSaldo() {
     } else {
         saldo.style.visibility = 'visible'
     }
+
+    if (saldo.style.visibility == 'visible') {
+        escondersaldo.innerText = 'visibility'
+    } else {
+        escondersaldo.innerText = 'visibility_off'
+    }
 }
 
 
@@ -52,6 +58,10 @@ function abrirMenu() {
     } else {
         operacoesplus.style.display = 'flex'
     }
+
+    if (operacoesplus.style.display == 'flex') {
+        botaomenu.innerText = 'expand_less'
+    } else ( botaomenu.innerText = 'expand_more' )
 
 }
 
