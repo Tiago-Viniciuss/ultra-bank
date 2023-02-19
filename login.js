@@ -79,12 +79,14 @@ function abrirConfig() {
 }
 
 function versoCartao() {
-    var versocartao = document.getElementById('cartaocredito')
+    var fotocartao = document.getElementById('cartaocredito')
     var botaofrente = document.getElementById('botaofrente')
     var botaofundo = document.getElementById('botaofundo')
 
-    if (versocartao.style.backgroundImage = 'url(../imagens/frentecartao.png)') {
-          versocartao.style.backgroundImage = 'url(../imagens/fundocartao.png)' 
+    if (fotocartao.style.backgroundImage = 'url(../imagens/frentecartao.png)') {
+          fotocartao.style.backgroundImage = 'url(../imagens/fundocartao.png)' 
+    } else if (fotocartao.style.backgroundImage = 'url(../imagens/fundocartao.png)') {
+        fotocartao.style.backgroundImage = 'url(../imagens/frentecartao.png)'
     }
 
     botaofrente.style.visibility = 'visible'
@@ -93,12 +95,14 @@ function versoCartao() {
 }
 
 function frenteCartao() {
-    var versocartao = document.getElementById('cartaocredito')
+    var fotocartao = document.getElementById('cartaocredito')
     var botaofundo = document.getElementById('botaofundo')
 
 
-    if (versocartao.style.backgroundImage = 'url(../imagens/fundocartao.png)'){
-        versocartao.style.backgroundImage = 'url(../imagens/frentecartao.png)'
+    if (fotocartao.style.backgroundImage = 'url(../imagens/fundocartao.png)'){
+        fotocartao.style.backgroundImage = 'url(../imagens/frentecartao.png)'
+    } else if ( fotocartao.style.backgroundImage = 'url(../imagens/frentecartao.png)') {
+        fotocartao.style.backgroundImage = 'url(../imagens/fundocartao.png)'
     }
   
     botaofrente.style.visibility = 'hidden'
