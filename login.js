@@ -118,3 +118,15 @@ function bloquearCartao() {
     }
 
 }
+
+function abrirmenuCartao() {
+    var menucartao = document.getElementById('menuconfigcartao')
+
+    menucartao.style.visibility = 'visible'
+}
+
+function fecharmenuCartao() {
+    var menucartao = document.getElementById('menuconfigcartao')
+
+    menucartao.style.visibility = 'hidden'
+}
