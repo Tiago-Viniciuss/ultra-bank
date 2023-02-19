@@ -5,33 +5,15 @@ body {
     padding: 0px;
 }
 
-#container {
-    display: grid;
-    background-color: rgb(255, 255, 255);
-    padding: 15px;
-    gap: 5px;
-    grid-template-areas: 
-                'header header header'
-                'main main main'
-                'aside aside aside';
-}
 
-#container header, aside, main {
-    background-color: #ffffff;
-    border: 1px solid rgb(255, 254, 254);
+header {
+    background-color: #C1292E;
+    border-radius: 5px;
+    margin: 10px;
     padding: 20px;
 }
 
-#cabeçalho {
-    grid-area: header;
-}
-
-#container header {
-    background-color: #C1292E;
-    border-radius: 5px;
-}
-
-#cabeçalho h1 {
+.cabeçalho h1 {
     color: #ffffff;
 }
 
@@ -53,18 +35,15 @@ body {
     
 }
 
- #botaosaldo {
-    background-color: transparent;
-    border: none;
-    font-size: 1em;
-    padding: 0px;
-}
+
 
 #escondersaldo {
-    font-size: 0.9em;
     font-weight: bold;
-    padding-left: 10px;
     color: grey;
+    background-color: transparent;
+    border: none;
+    font-size: 0.9em;
+    padding: 0px 0px 0px 10px;
 }
 
 #escondersaldo:hover {
@@ -128,8 +107,7 @@ body {
 
 
 #main {
-    grid-area: main;
-    border-radius: 5px;
+    padding: 20px;
 }
 
 #principal {
@@ -295,7 +273,7 @@ body {
 
 #marketing {
     background-color: #e6e6e6;
-    grid-area: aside;
+    padding: 20px;
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -351,3 +329,41 @@ body {
     Seção Cartões
 */
 
+#sectioncartoes {
+    width: 100%;
+    height: 700px;
+    background-color: white;
+}
+
+.cabeçalhocartoes h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+#sectioncartoes h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+}
+
+#sectioncartoes p {
+    margin-top: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+#fundocartaocredito {
+    width: 100%;
+    height: 300px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cartaocredito {
+    width: 280px;
+    height: 170px;
+    background-color: #ffffff;
+}

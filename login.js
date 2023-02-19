@@ -41,9 +41,9 @@ function esconderSaldo() {
     }
 
     if (saldo.style.visibility == 'visible') {
-        escondersaldo.innerText = 'visibility'
+        escondersaldo.value = 'visibility'
     } else {
-        escondersaldo.innerText = 'visibility_off'
+        escondersaldo.value = 'visibility_off'
     }
 }
 

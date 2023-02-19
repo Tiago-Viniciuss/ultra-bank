@@ -14,23 +14,20 @@
     
 </head>
 <body>
-    <div id="container">
-        <header id="cabeçalho">
-            <h1>Ultra Bank</h1>
+    <header class="cabeçalho">
+        <h1>Ultra Bank</h1>
             <div id="boxsaldo">
                 <p id="saldo">R$57.140,17</p>
-                 <button id="botaosaldo">
-                     <span class="material-symbols-outlined" id="escondersaldo" onclick="esconderSaldo()">
-                        visibility_off</span>
-                 </button>
+                 
+                 <input type="button" value="visibility_off" id="escondersaldo" class="material-symbols-outlined" onclick="esconderSaldo()">
             </div>
             <button id="configbtn">
                 <span class="material-symbols-outlined" id="configbotao" onclick="abrirConfig()">
                     settings
                     </span>
             </button>
-        </header>
-        <menu id="configuracoes">
+    </header>
+    <menu id="configuracoes">
             <a href="#">Minha Conta</a>
             <hr color="grey" width="80%">
             <a href="#">Preferências</a>
@@ -47,8 +44,8 @@
             <hr color="grey" width="80%">
             <a href="index.html" id="logout">Sair do App</a>
             <hr color="grey" width="80%">
-        </menu>
-        <main id="main">
+    </menu>
+    <main id="main">
             <section id="principal">
                     <button>
                         <a href="cartoes.html">
@@ -98,8 +95,8 @@
                     <p>E-loja</p>
                 </div>
             </section>
-        </main>
-        <aside id="marketing">
+    </main>
+    <aside id="marketing">
             <div id="campanha" class="propaganda">
                 <p>Livre-se das Taxas</p>
             </div>
@@ -109,9 +106,8 @@
             <div id="convideumamigo" class="propaganda">
                 <p>Convide um Amigo</p>
             </div>
-        </aside>
-        <footer id="rodape"></footer>
-    </div>
+     </aside>
+     <footer id="rodape"></footer>
     <script src="login.js"></script>
 </body>
 </html>
