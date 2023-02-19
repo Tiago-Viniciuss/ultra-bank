@@ -19,14 +19,18 @@
             <h1>Ultra Bank</h1>
             <div id="boxsaldo">
                 <p id="saldo">R$57.140,17</p>
-                 <span class="material-symbols-outlined" id="escondersaldo" onclick="esconderSaldo()">
-                visibility_off
-                </span></div>
-            <span class="material-symbols-outlined" id="pessoal" onclick="menuPessoal()">
-                settings
-                </span>
+                 <button id="botaosaldo">
+                     <span class="material-symbols-outlined" id="escondersaldo" onclick="esconderSaldo()">
+                        visibility_off</span>
+                 </button>
+            </div>
+            <button id="configbtn">
+                <span class="material-symbols-outlined" id="configbotao" onclick="abrirConfig()">
+                    settings
+                    </span>
+            </button>
         </header>
-        <menu id="menupessoal">
+        <menu id="configuracoes">
             <a href="#">Minha Conta</a>
             <hr color="grey" width="80%">
             <a href="#">Preferências</a>
@@ -43,9 +47,6 @@
             <hr color="grey" width="80%">
             <a href="index.html" id="logout">Sair do App</a>
             <hr color="grey" width="80%">
-            <span class="material-symbols-outlined" id="retrairmenu" onclick="retrairMenu()">
-                remove
-                </span>
         </menu>
         <main id="main">
             <section id="principal">

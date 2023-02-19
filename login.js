@@ -66,26 +66,15 @@ function abrirMenu() {
 }
 
 
-function menuPessoal() {
+function abrirConfig() {
 
-    var menupessoal = document.getElementById('menupessoal')
+    var configuracoes = document.getElementById('configuracoes')
 
-    if (menupessoal.style.visibility == 'visible') {
-        menupessoal.style.visibility = 'hidden'
+    if (configuracoes.style.visibility == 'visible') {
+        configuracoes.style.visibility = 'hidden'
     } else {
-        menupessoal.style.visibility = 'visible'
+        configuracoes.style.visibility = 'visible'
     }
 
 }
 
-
-function retrairMenu() {
-    var menu = document.getElementById('menupessoal')
-
-    if ( menu.style.visibility == 'visible') {
-        menu.style.visibility = 'hidden'
-    } else {
-        menu.style.visibility = 'visible'
-    }
-
-}
