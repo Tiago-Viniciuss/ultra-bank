@@ -11,12 +11,13 @@
 </head>
 <body>
     <header class="cabeçalhocartoes">
+        <button id="homegeral" class="material-symbols-outlined"><a href="home.html">home</a></button>
         <h1>Ultra Bank</h1>
     </header>
    <section id="sectioncartoes">
     
-    <h2>R$57.140,17</h2>
-    <p>Disponível para uso</p>
+    <h2 id="creditodisponivel">R$22.782,15</h2>
+    <p id="creditofrase">Crédito disponível</p>
 
     <div id="fundocartaocredito">
         <button onclick="frenteCartao()" id="botaofrente" class="material-symbols-outlined">
@@ -25,10 +26,11 @@
         <div id="cartaocredito"></div>
         <button onclick="versoCartao()" id="botaofundo" class="material-symbols-outlined">arrow_right</button>
     </div>
+    <div id="configcartao">
+        <input type="button" value="lock" class="material-symbols-outlined" id="bloquearcartao" onclick="bloquearCartao()"><input type="button" value="settings" class="material-symbols-outlined" id="configurarcartao"><br>
+        <label for="configurarcartao" id="bloqueionome">Bloquear</label> <label for="bloquearcartao">Configurar</label>
+    </div>
    </section>
-   <footer class="footergeral">
-    <button id="homefooter" class="material-symbols-outlined">home</button>  <button id="configfooter" class="material-symbols-outlined">home</button>  <button id="logoutfooter" class="material-symbols-outlined">home</button>
-   </footer>
     <script src="login.js"></script>
 </body>
 </html>

@@ -104,3 +104,19 @@ function frenteCartao() {
     botaofrente.style.visibility = 'hidden'
     botaofundo.style.visibility = 'visible'
 }
+
+function bloquearCartao() {
+    var cadeado = document.getElementById('bloquearcartao')
+    var saldo = document.getElementById('creditodisponivel')
+    var frase = document.getElementById('creditofrase')
+    var bloqueionome = document.getElementById('bloqueionome')
+
+   
+    
+    if (frase.innerText == 'Crédito disponível') {
+        frase.innerText = 'CRÉDITO BLOQUEADO',frase.style.fontWeight = 'bold' ,saldo.style.color = 'lightgray', cadeado.value = 'lock_open', bloqueionome.innerText = 'Desbloquear'
+    } else if  (frase.innerText == 'CRÉDITO BLOQUEADO') {
+        frase.innerText = 'Crédito disponível', frase.style.fontWeight = 'normal',  saldo.style.color = 'black', cadeado.value = 'lock', bloqueionome.innerText = 'Bloquear'
+    }
+
+}

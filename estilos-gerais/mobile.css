@@ -320,6 +320,24 @@ header {
     background-size: cover;
 }
 
+#homegeral {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 2em;
+    margin: 15px;
+    padding: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+#homegeral a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 
 /*
     Seção Cartões
@@ -356,7 +374,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 #fundocartaocredito button {
@@ -396,11 +414,34 @@ header {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.814);
 }
 
-.footergeral {
+#configcartao {
+    width: 100%;
+    text-align: center;
+}
+
+#configcartao label {
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+#bloquearcartao {
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    font-size: 2em;
     background-color: #C1292E;
-    margin: auto;
-    height: 300px;
-    width: 90%;
-    border-radius: 10px;
-    
+    color: white;
+}
+
+
+
+#configurarcartao {
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    font-size: 2em;
+    background-color: #C1292E;
+    color: white;
 }
