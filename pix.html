@@ -16,16 +16,19 @@
     </header>
    <main id="mainpix">
     <h2>PIX</h2>
+    <p>
+        A maneira mais rápida e barata <br> de fazer suas transferências
+    </p>
     <section id="pagarpix" onclick="criarPix()">
         <div>
             <h3>Enviar</h3>
         </div>
     </section>
     <div id="fazerpix">
-           <label for="destino">Nome do destinatário:</label><input type="text" name="destino" id="destino" placeholder="Insira o nome completo" required>
-           <label for="chavepix">Chave pix do destinatário:</label><input type="number" name="chavepix" id="chavepix" placeholder="Insira todos os dígitos" required>
-           <label for="valorpix">Valor da Transferência:</label><input type="number" name="chavepix" id="valorpix" placeholder="Digite um valor sem pontos" required>
-           <label for="senhapix">Senha da sua conta:</label><input type="password" name="senha" id="senhapix" placeholder="Insira sua senha de 4 dígitos">
+           <label for="destino">Nome do destinatário:</label> <br> <input type="text" name="destino" id="destino" placeholder="Insira o nome completo" required> <br>
+           <label for="chavepix">Chave pix do destinatário:</label> <br> <input type="number" name="chavepix" id="chavepix" placeholder="Insira todos os dígitos" required> <br>
+           <label for="valorpix">Valor da Transferência:</label> <br> <input type="number" name="chavepix" id="valorpix" placeholder="Digite um valor sem pontos" required> <br>
+           <label for="senhapix">Senha da sua conta:</label> <br> <input type="password" name="senha" id="senhapix" placeholder="Insira sua senha de 4 dígitos"> <br>
            <input type="submit" value="Enviar Pix" id="botaoenviarpix" onclick="enviarPix()"> <br>
            <button class="material-symbols-outlined" id="fecharmenupix" onclick="fecharMenupix()">cancel</button>
     </div>
