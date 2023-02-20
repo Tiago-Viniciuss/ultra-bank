@@ -309,7 +309,7 @@ header {
 }
 
 #campanha {
-    background-image: url(../imagens/campanha.jpg);
+    background-image: url(../imagens/campanha.png);
     background-position: center;
     background-size: cover;
 }
@@ -741,4 +741,8 @@ header {
     color: #ffffff;
     background-color: #C1292E;
     cursor: pointer;
+}
+
+#maisopcoes button:hover {
+    background-color: #ec4e53;
 }
