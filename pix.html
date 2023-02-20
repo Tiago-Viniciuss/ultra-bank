@@ -24,26 +24,37 @@
     <div id="fazerpix">
            <label for="destino">Nome do destinatário:</label><input type="text" name="destino" id="destino" placeholder="Insira o nome completo" required>
            <label for="chavepix">Chave pix do destinatário:</label><input type="number" name="chavepix" id="chavepix" placeholder="Insira todos os dígitos" required>
-           <label for="valorpix">Valor da Transferência:</label><input type="number" name="chavepix" id="valorpix" placeholder="Digite quanto quer enviar" required>
-           <label for="senha">Senha da sua conta:</label><input type="password" name="senha" id="senhapix" placeholder="Insira sua senha de 4 dígitos">
-           <input type="submit" value="Enviar Pix" id="botaoenviarpix" onclick="enviarPix()"> 
+           <label for="valorpix">Valor da Transferência:</label><input type="number" name="chavepix" id="valorpix" placeholder="Digite um valor sem pontos" required>
+           <label for="senhapix">Senha da sua conta:</label><input type="password" name="senha" id="senhapix" placeholder="Insira sua senha de 4 dígitos">
+           <input type="submit" value="Enviar Pix" id="botaoenviarpix" onclick="enviarPix()"> <br>
+           <button class="material-symbols-outlined" id="fecharmenupix" onclick="fecharMenupix()">cancel</button>
     </div>
     <div id="pixenviado">
-        <button><a href="pix.html">X</a></button>
+        <button class="material-symbols-outlined"><a href="pix.html">cancel</a></button>
         <h2>Ultra Bank</h2>
         <h3>Comprovante de Transferência</h3>
         <hr width="80%" color="#C1292E">
         <p>Valor Enviado:</p><p id="valorenviado"></p>
         <p>Nome do Destinatário:</p>
         <p id="receptordopix"></p>
+        <p>Data do envio:</p>
+        <p id="datadopix"></p>
         <p>Tipo de transferência:</p>
         <p><strong>Pix</strong></p>
+        <hr width="80%" color="#C1292E">
+        
     </div>
-    <section id="receberpix">
+    <section id="receberpix" onclick="receberPix()">
         <div>
             <h3>Receber</h3>
         </div>
     </section>
+    <div id="qrcodepix">
+        <p>Informe uma de suas chaves <br> ou apresente o QR Code:</p>
+        <div id="codigoqr">
+        </div>
+        <button id="botaoqrcode" onclick="fecharQRcode()">Pronto</button>
+    </div>
     <section id="maisopcoes">
         <button>Minhas Chaves</button><button>Extrato</button><button>Favoritos</button>
     </section>
