@@ -24,7 +24,7 @@ function enviarPix() {
     var nome1 = String(nome.value)
     var valor1 = Number(valor.value)
 
-    if (nome.value.length == 0 || chave.value.length == 0 || valor.value.length == 0 || senha.value.length == 0 ) {
+    if (nome.value.length == 0 || chave.value.length < 9 || valor.value.length == 0 || senha.value != '1234' ) {
         alert('Preencha todos os campos corretamente!')
         botao.style.display = 'none'  
     }
