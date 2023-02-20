@@ -608,14 +608,14 @@ header {
 
 #pixenviado {
     width: 70%;
-    height: 650px;
+    height: 600px;
     background-color: rgb(255, 255, 255);
     display: none;
     text-align: center;
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.777);
 
     position: fixed;
-    top: 17%;
+    top: 13%;
     left: 15%;
 }
 
@@ -745,4 +745,29 @@ header {
 
 #maisopcoes button:hover {
     background-color: #ec4e53;
+}
+
+/*
+    Seção Investimentos
+*/
+
+#maininvest {
+    text-align: center;
+}
+
+#maininvest > h2 > a {
+    color: #C1292E;
+    text-decoration: none;
+    cursor: text;
+    font-size: 0.8em;
+}
+
+.chamada {
+    color: white;
+    background-color: #C1292E;
+    font-weight: bold;
+    padding: 15px;
+    width: 250px;
+    border-radius: 3px;
+    box-shadow: -4px 4px 7px rgba(0, 0, 0, 0.625);
 }
