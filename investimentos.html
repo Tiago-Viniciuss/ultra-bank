@@ -21,10 +21,37 @@
             Investir nunca foi tão fácil e seguro
         </p>
     </marquee>
-    
+    <section id="opcoesinvest">
+        <div id="fototesouro"></div>
+        <div id="fotofundoimobiliario"></div>
+        <div id="fotoprevidencia"></div>
+        
+    </section>
+    <section >
+        <h3 id="enqueteperfil">Qual é o seu perfil de investidor?</h3>
+        <button id="abrirenquete" onclick="abrirEnquete()">DESCUBRA AQUI!</button>
+    </section>
+    <div id="enquete">
+        <h4>Prefere investir a curto ou longo prazo?</h4> <br> 
+        <input type="radio" name="tempo" id="curto" checked><label for="curto">Curto prazo </label> <br> 
+        <input type="radio" name="tempo" id="longo"><label for="longo">Longo prazo</label>
+        <h4>Qual o máximo que você investiria?</h4> <br> 
+        <input type="radio" name="valor" id="pouco" checked><label for="pouco">Até R$5.000</label> <br> 
+        <input type="radio" name="valor" id="muito"><label for="muito">Acima de R$10.000</label>
+        <h4>Tem coragem de investir na Bolsa?</h4> <br> 
+        <input type="radio" name="coragem" id="sim" checked><label for="sim">Com certeza!</label> <br> 
+        <input type="radio" name="coragem" id="nao"><label for="nao">Deixa pra próxima...</label> <br>
+        <input id="verificarperfil" type="button" value="Verificar" onclick="verificarResposta()">
+    </div>
+    <div id="resultadoenquete">
+       
+        <h3>Seu perfil de investidor é:</h3>
+        <h4 id="perfilresposta">Conservador</h4>
+        <p id="perfilcomentario">Continue buscando conhecimento sobre investimentos e comece a ganhar mais confiança nas suas operações.</p>
+        <a href="investimentos.html"><button class="material-symbols-outlined">close</button></a>
+    </div>
    
    </main>
-   
-    <script src="pix.js"></script>
+    <script src="investimentos.js"></script>
 </body>
 </html>

@@ -753,6 +753,7 @@ header {
 
 #maininvest {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 #maininvest > h2 > a {
@@ -763,6 +764,7 @@ header {
 }
 
 .chamada {
+    margin-top: 50px;
     color: white;
     background-color: #C1292E;
     font-weight: bold;
@@ -770,4 +772,135 @@ header {
     width: 250px;
     border-radius: 3px;
     box-shadow: -4px 4px 7px rgba(0, 0, 0, 0.625);
+}
+
+#opcoesinvest {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#opcoesinvest div {
+    background-color: #C1292E;
+    color: white;
+    width: 80px;
+    height: 80px;
+    margin: 15px;
+    border-radius: 50%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#opcoesinvest div:hover {
+    transform: scale(1.1);
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.878);
+}
+
+
+#fototesouro {
+    background-image: url(../imagens/investimentobolsa.png);
+}
+
+#fotofundoimobiliario {
+    background-image: url(../imagens/fundoimobiliario.png);
+}
+
+#fotoprevidencia {
+    background-image: url(../imagens/privada.png);
+}
+
+
+
+#enqueteperfil {
+    margin: 50px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#abrirenquete {
+    background-color: white;
+    color: #C1292E;
+    font-weight: bold;
+    cursor:pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#abrirenquete:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.762);
+}
+
+#enquete {
+    margin: 40px 10px;
+    text-align: left;
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.57);
+}
+
+#enquete h4 {
+    margin-top: 15px 0px;
+    background-color: #C1292E;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#enquete input {
+    margin-bottom: 10px;
+}
+
+
+#enquete #verificarperfil {
+    margin-top: 30px;
+    margin-left: 35%;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    color: #C1292E;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.611);
+}
+
+#resultadoenquete {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+    height: 300px;
+    background-color: #e6e6e6;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.57);
+    display: none;
+}
+
+#resultadoenquete h4 {
+    margin: 0px;
+}
+
+#resultadoenquete p {
+    margin: 0px;
+    padding: 20px;
+    text-align: justify;
+}
+
+#resultadoenquete button {
+    margin-top: 25px;
+    background-color: #C1292E;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
