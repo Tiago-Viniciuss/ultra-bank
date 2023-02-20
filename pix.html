@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos-gerais/mobile.css">
+    <link rel="stylesheet" href="estilos-gerais/tablet.css" media="(min-width: 768px) and (max-width: 1200px)">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Ultra Bank</title>
+</head>
+<body>
+    <header class="cabeçalhocartoes">
+        <button id="homegeral" class="material-symbols-outlined"><a href="home.html">home</a></button>
+        <h1>Ultra Bank</h1>
+    </header>
+   <main id="mainpix">
+    <h2>PIX</h2>
+    <section id="pagarpix" onclick="criarPix()">
+        <div>
+            <h3>Enviar</h3>
+        </div>
+    </section>
+    <div id="fazerpix">
+           <label for="destino">Nome do destinatário:</label><input type="text" name="destino" id="destino" placeholder="Insira o nome completo" required>
+           <label for="chavepix">Chave pix do destinatário:</label><input type="number" name="chavepix" id="chavepix" placeholder="Insira todos os dígitos" required>
+           <label for="valorpix">Valor da Transferência:</label><input type="number" name="chavepix" id="valorpix" placeholder="Digite quanto quer enviar" required>
+           <label for="senha">Senha da sua conta:</label><input type="password" name="senha" id="senhapix" placeholder="Insira sua senha de 4 dígitos">
+           <input type="submit" value="Enviar Pix" id="botaoenviarpix" onclick="enviarPix()"> 
+    </div>
+    <div id="pixenviado">
+        <button><a href="pix.html">X</a></button>
+        <h2>Ultra Bank</h2>
+        <h3>Comprovante de Transferência</h3>
+        <hr width="80%" color="#C1292E">
+        <p>Valor Enviado:</p><p id="valorenviado"></p>
+        <p>Nome do Destinatário:</p>
+        <p id="receptordopix"></p>
+        <p>Tipo de transferência:</p>
+        <p><strong>Pix</strong></p>
+    </div>
+    <section id="receberpix">
+        <div>
+            <h3>Receber</h3>
+        </div>
+    </section>
+    <section id="maisopcoes">
+        <button>Minhas Chaves</button><button>Extrato</button><button>Favoritos</button>
+    </section>
+   </main>
+   
+    <script src="pix.js"></script>
+</body>
+</html>
