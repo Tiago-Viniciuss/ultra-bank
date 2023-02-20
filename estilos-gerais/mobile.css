@@ -769,7 +769,7 @@ header {
     background-color: #C1292E;
     font-weight: bold;
     padding: 15px;
-    width: 250px;
+    width: 280px;
     border-radius: 3px;
     box-shadow: -4px 4px 7px rgba(0, 0, 0, 0.625);
 }
@@ -841,7 +841,7 @@ header {
     margin: 40px 10px;
     text-align: left;
     width: 80%;
-    height: 500px;
+    height: 550px;
     margin: auto;
     background-color: #e6e6e6;
     padding: 10px;
