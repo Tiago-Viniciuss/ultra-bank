@@ -222,7 +222,8 @@ header {
 }
 
 .operaçoes:hover {
-    background-color: #da3a40;
+    transform: scale(1.1);
+    box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.642);
 }
 
 .operaçoes p {
@@ -255,7 +256,8 @@ header {
 }
 
 .operaçoesplus:hover {
-    background-color: #da3a40;
+   transform: scale(1.1);
+   box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.642);
 }
 
 .operaçoesplus p {
@@ -499,18 +501,19 @@ header {
 #menuconfigcartao button {
     position: absolute;
     top: 0;
-    background-color: #C1292E;
-    color: white;
-    width: 50px;
+    left: 0;
+    background-color: transparent;
+    color: #C1292E;
+    width: 30px;
     height: 30px;
     border: none;
-    padding: 4px;
+    padding: 0px;
     border-radius: 5px 10px 10px 0px;
     cursor: pointer;
 }
 
 #menuconfigcartao button:hover {
-    background-color: #ec4e53;
+   transform: scale(1.1);
 }
 
 #menuconfigcartao p {
@@ -606,6 +609,10 @@ header {
     border-radius: 5px;
 }
 
+#botaoenviarpix:hover {
+    transform: scale(1.1);
+}
+
 #pixenviado {
     width: 85%;
     height: 600px;
@@ -624,24 +631,27 @@ header {
 }
 
 #pixenviado button {
-    background-color: #C1292E;
+    background-color: transparent;
     width: 40px;
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 0px 5px 5px 0px;
+    border: none;
+    padding: 0px;
 }
 
 #pixenviado button:hover {
-    background-color: #ec4e53;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 #pixenviado a {
     width: 30px;
+    height: 30px;
     text-decoration: none;
     background-color: transparent;
-    color: white;
+    color: #C1292E;
+    padding: 0px;
 }
 
 #pixenviado h2 {
@@ -658,6 +668,10 @@ header {
     margin-top: 10px;
     color: #C1292E;
     cursor: pointer;
+}
+
+#fecharmenupix:hover {
+    transform: scale(1.1);
 }
 
 #receberpix {
@@ -718,13 +732,17 @@ header {
 }
 
 #botaoqrcode {
-    font-size: 1em;
+    font-size: 1.6em;
     margin-top: 20px;
-    background-color: #C1292E;
-    color: white;
-    border: 2px solid black;
-    border-radius: 5px;
+    background-color: transparent;
+    color: #C1292E;
+    border: none;
+    border-radius: 50%;
     cursor: pointer;
+}
+
+#botaoqrcode:hover {
+    transform: scale(1.1);
 }
 
 #maisopcoes {
@@ -868,7 +886,7 @@ header {
 
 
 #enquete #verificarperfil {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 35%;
     font-weight: bold;
     padding: 10px;
@@ -877,6 +895,10 @@ header {
     background-color: white;
     cursor: pointer;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.611);
+}
+
+#enquete #verificarperfil:hover {
+    transform: scale(1.1);
 }
 
 #resultadoenquete {
@@ -903,8 +925,13 @@ header {
 
 #resultadoenquete button {
     margin-top: 25px;
-    background-color: #C1292E;
-    color: white;
-    border-radius: 5px;
+    font-size: 1.7em;
+    background-color: transparent;
+    color: #C1292E;
+    border: none;
     cursor: pointer;
+}
+
+#resultadoenquete button:hover {
+    transform: scale(1.1);
 }
