@@ -67,9 +67,8 @@ header {
 
 #configuracoes {
     background-color: white;
-    padding-top: 0px;
-    padding-left: 0px;
-    height: 550px;
+    padding: 20px 0px 30px 0px;
+    height: 0px;
     width: 80%;
     margin: 0px;
     display: flex;
@@ -77,12 +76,19 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    border-radius: 0px 0px 20px 0px;
     
+    transition: 0.6s;
     visibility: hidden;
+    overflow-y: hidden;
     position: fixed;
     top: 0;
     left: 0;
+}
 
+#nav.active #configuracoes {
+    height: calc(70vh);
+    visibility: visible;
 }
 
 #configuracoes a {
@@ -403,7 +409,7 @@ header {
     width: 240px;
     height: 150px;
     border-radius: 10px;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.814);
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.705);
     background-color: #ffffff;
     background-image: url(../imagens/frentecartao.png);
     background-position: center;
@@ -415,14 +421,14 @@ header {
 
 #cartaocredito:hover {
     transform: scale(1.1);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.814);
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.814);
 }
 
 #cartaocredito2 {
     width: 240px;
     height: 150px;
     border-radius: 10px;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.814);
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.705);
     background-color: #ffffff;
     background-image: url(../imagens/fundocartao.png);
     background-position: center;
@@ -433,7 +439,7 @@ header {
 
 #cartaocredito2:hover {
     transform: scale(1.1);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.814);
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.814);
 }
 
 #configcartao {
@@ -461,7 +467,7 @@ header {
 }
 
 #bloquearcartao:hover {
-    background-color: #ec4e53;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -476,12 +482,12 @@ header {
 }
 
 #configurarcartao:hover {
-    background-color: #ec4e53;
+    transform: scale(1.1);
     cursor: pointer;
 }
 
 #menuconfigcartao {
-    width: 85%;
+    width: 0px;
     background-color: rgb(244, 244, 244);
     height: 500px;
     display: flex;
@@ -492,10 +498,17 @@ header {
     text-align: left;
     box-shadow: -7px 7px 5px rgba(0, 0, 0, 0.779);
     
+    transition: 0.5s;
     visibility: hidden;
     position: fixed;
+    overflow-x: hidden;
     top: 20%;
     right: 0;
+}
+
+#menucartoes.active #menuconfigcartao {
+    width: 65%;
+    visibility: visible;
 }
 
 #menuconfigcartao button {

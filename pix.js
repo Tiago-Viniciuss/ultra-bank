@@ -48,14 +48,14 @@ function receberPix() {
     var qrcodepix = document.getElementById('qrcodepix')
 
     
-        qrcodepix.style.display = 'flex'
+    qrcodepix.style.display = 'flex'
     
 }
 
 function fecharQRcode() {
     var qrcodepix = document.getElementById('qrcodepix')
 
-        qrcodepix.style.display = 'none'
+    qrcodepix.style.display = 'none'
 }
 
     

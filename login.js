@@ -21,8 +21,7 @@ function fazerLogin() {
         alert('Digite o seu nome!')
     } else {
         dados.innerHTML = `<p id:"dados">Olá, <strong>${nomeusuario}</strong>! <br> <br> Seja bem-vindo(a) ao Ultra Bank. <br> <br> Seus dados de acesso são: <br> <br> Usuário: <strong>1234</strong> <br> Senha: <strong>1234</strong></p>`
-
-    };
+    }
 
     }
    
@@ -64,15 +63,9 @@ function abrirMenu() {
 
 
 function abrirConfig() {
-
-    var configuracoes = document.getElementById('configuracoes')
-
-    if (configuracoes.style.visibility == 'visible') {
-        configuracoes.style.visibility = 'hidden'
-    } else {
-        configuracoes.style.visibility = 'visible'
-    }
-
+    var nav = document.getElementById('nav')
+    
+    nav.classList.toggle('active')
 }
 
 function versoCartao() {
@@ -117,13 +110,15 @@ function bloquearCartao() {
 }
 
 function abrirmenuCartao() {
-    var menucartao = document.getElementById('menuconfigcartao')
+    var menucartao = document.getElementById('menucartoes')
 
-    menucartao.style.visibility = 'visible'
+    menucartao.classList.toggle('active')
 }
 
 function fecharmenuCartao() {
-    var menucartao = document.getElementById('menuconfigcartao')
+    var menucartao = document.getElementById('menucartoes')
 
-    menucartao.style.visibility = 'hidden'
+    if (menucartao.classList.toggle('active')) {
+        menucartao.classList.toggle('deactivate')
+    }
 }

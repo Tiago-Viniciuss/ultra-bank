@@ -30,16 +30,18 @@
     <div id="configcartao">
         <input type="button" value="lock" class="material-symbols-outlined" id="bloquearcartao" onclick="bloquearCartao()"><input type="button" value="settings" class="material-symbols-outlined" id="configurarcartao" onclick="abrirmenuCartao()"><br>
         <div id="labelcartao">
-            <label for="configurarcartao" id="bloqueionome">Bloquear</label> <label for="configurarcartao">Configurar</label>
+            <label for="bloquearcartao" id="bloqueionome">Bloquear</label> <label for="configurarcartao">Configurar</label>
         </div>
     </div>
-    <aside id="menuconfigcartao">
-        <button onclick="fecharmenuCartao()" class="material-symbols-outlined">cancel</button>
-        <p>Compras por aproximação</p>
-        <p>Cartão perdido ou danificado</p>
-        <p>Cartão virtual</p>
-        <p>Google Pay</p> 
-    </aside>
+    <div id="menucartoes">
+        <aside id="menuconfigcartao">
+            <button onclick="fecharmenuCartao()" class="material-symbols-outlined">cancel</button>
+            <p>Compras por aproximação</p>
+            <p>Cartão perdido ou danificado</p>
+            <p>Cartão virtual</p>
+            <p>Google Pay</p>
+        </aside>
+    </div>
    </section>
     <script src="login.js"></script>
 </body>
