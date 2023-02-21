@@ -6,6 +6,12 @@ function abrirEnquete() {
     enquete.style.display = 'block'
 }
 
+function cancelarEnquete() {
+    var enquete = document.getElementById('enquete')
+    
+    enquete.style.display = 'none'
+}
+
 function verificarResposta() {
     var enquete = document.getElementById('enquete')
     var botaoabrir = document.getElementById('abrirenquete')
