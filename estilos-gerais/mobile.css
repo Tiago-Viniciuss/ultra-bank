@@ -16,6 +16,7 @@ header {
 
 .cabeçalho h1 {
     color: #ffffff;
+    font-size: 2.4em;
 }
 
 #boxsaldo {
@@ -24,7 +25,7 @@ header {
     background-color: rgb(228, 228, 228);
     border-radius: 3px;
     width: 140px;
-    padding: 10px;
+    padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
 }
@@ -33,7 +34,6 @@ header {
     padding: 0px;
     margin: 0px;
     visibility: hidden;
-    
 }
 
 #escondersaldo {

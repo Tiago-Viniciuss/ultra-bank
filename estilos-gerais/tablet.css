@@ -3,41 +3,986 @@
 body {
     margin: 0px;
     padding: 0px;
+    background-color: rgb(255, 255, 255);
 }
 
-#container {
-    display: grid;
-    background-color: rgb(119, 123, 51);
-    padding: 15px;
-    gap: 5px;
-    grid-template-areas: 
-                'header header header'
-                'main main main'
-                'aside aside aside'
-                'footer footer footer';
-}
 
-#container header, aside, main, footer {
-    background-color: #ccc;
-    border: 1px solid blue;
+header {
+    background-color: #C1292E;
+    border-radius: 5px;
+    margin: 10px;
     padding: 20px;
 }
 
-#cabeçalho {
-    grid-area: header;
+.cabeçalho h1 {
+    color: #ffffff;
+    font-size: 2.5em;
 }
 
-#marketing {
-    grid-area: aside;
-    height: 50vh;
+#boxsaldo {
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: rgb(228, 228, 228);
+    border-radius: 3px;
+    width: 200px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+}
+
+#saldo {
+    padding: 0px;
+    margin-left: 30px;
+    visibility: hidden;
+}
+
+#escondersaldo {
+    font-weight: bold;
+    color: grey;
+    background-color: transparent;
+    border: none;
+    font-size: 0.9em;
+    padding: 0px 0px 0px 10px;
+}
+
+#escondersaldo:hover {
+    cursor: pointer;
+}
+
+
+#configbotao {
+    position: absolute;
+    top: 3%;
+    right: 0;
+    margin: 0px 30px 0px 0px;
+    padding: 0px;
+    font-size: 2em;
+    font-weight: normal;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+#configuracoes {
+    background-color: white;
+    padding: 20px 0px 30px 0px;
+    height: 0px;
+    width: 50%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 0px 20px 0px;
     
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#nav.active #configuracoes {
+    height: calc(70vh);
+    visibility: visible;
+}
+
+#configuracoes a {
+    text-decoration: none;
+    margin: auto;
+    padding: 10px;
+    width: 150px;
+    height: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #C1292E;
+}
+
+#configuracoes #logout {
+    font-size: 1.2em;
+    color: black;
+}
+
+
+#main {
+    padding: 20px;
+    background-color: white;
 }
 
 #principal {
-    grid-area: main;
-    height: 50vh;
+    width: 450px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
 }
 
-#rodape {
-    grid-area: footer;
+#principal button {
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    border: none;
 }
+
+#principal a {
+    text-decoration: none;
+}
+
+#op1 {
+    background-image: url(../imagens/cartoes.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op2 {
+    background-image: url(../imagens/pix.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op3 {
+    background-image: url(../imagens/investimento.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op4 {
+    background-image: url(../imagens/extrato.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op5 {
+    background-image: url(../imagens/transferencias.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op6 {
+    background-image: url(../imagens/pagamentos.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op7 {
+    background-image: url(../imagens/recarga.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op8 {
+    background-image: url(../imagens/boletos.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op9 {
+    background-image: url(../imagens/emprestimos.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op10 {
+    background-image: url(../imagens/cambio.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op11 {
+    background-image: url(../imagens/seguros.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#op12 {
+    background-image: url(../imagens/e-loja.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#menuopcoes {
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menuopcoes div {
+    margin: 20px;
+}
+
+#abrirmenu {
+    width: 25px;
+    margin: auto;
+}
+
+#abrirmenu button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.operaçoes {
+    width: 100px;
+    height: 100px;
+    background-color: #C1292E;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border: 2px solid rgb(127, 1, 1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.operaçoes:hover {
+    
+    box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.642);
+}
+
+.operaçoes p {
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#abrirmenu {
+    text-align: center;
+    font-size: 1.4m;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.operaçoesplus {
+    width: 90px;
+    height: 90px;
+    background-color: #C1292E;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-radius: 5px;
+    border: 2px solid rgb(127, 1, 1);
+    cursor: pointer;
+}
+
+.operaçoesplus:hover {
+   
+   box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.642);
+}
+
+.operaçoesplus p {
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+#marketing {
+    background-color: #e6e6e6;
+    padding: 20px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.propaganda {
+    height: 170px;
+    width: 250px;
+    background-color: cornsilk;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.propaganda:hover {
+    cursor: pointer;
+}
+
+.propaganda p {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0px 0px 5px 0px;
+    color: #ffffff;
+    background-color: #c1292ede;
+}
+
+#bolsadevalores {
+    background-image: url(../imagens/bolsadevalores.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#campanha {
+    background-image: url(../imagens/campanha.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#convideumamigo {
+    background-image: url(../imagens/convideamigo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#homegeral {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 2em;
+    margin: 15px;
+    padding: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+#homegeral a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+/*
+    Seção Cartões
+*/
+
+#sectioncartoes {
+    width: 100%;
+    background-color: white;
+}
+
+.cabeçalhocartoes h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    text-align: center;
+}
+
+#sectioncartoes h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+}
+
+#sectioncartoes p {
+    margin-top: 5px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+#fundocartaocredito {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#fundocartaocredito button {
+    height: 60px;
+}
+
+#botaofrente {
+    visibility: hidden;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0px;
+}
+
+#botaofundo {
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#cartaocredito {
+    width: 260px;
+    height: 160px;
+    border-radius: 10px;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.705);
+    background-color: #ffffff;
+    background-image: url(../imagens/frentecartao.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+
+#cartaocredito:hover {
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.814);
+}
+
+#cartaocredito2 {
+    width: 240px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.705);
+    background-color: #ffffff;
+    background-image: url(../imagens/fundocartao.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+#cartaocredito2:hover {
+    
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.814);
+}
+
+#configcartao {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+#labelcartao {
+    margin: auto;
+    margin-bottom: 50px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+#bloquearcartao {
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    font-size: 2em;
+    background-color: #C1292E;
+    color: white;
+}
+
+#bloquearcartao:hover {
+    
+    cursor: pointer;
+}
+
+#configurarcartao {
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    border-radius: 50%;
+    font-size: 2em;
+    background-color: #C1292E;
+    color: white;
+}
+
+#configurarcartao:hover {
+    
+    cursor: pointer;
+}
+
+#menuconfigcartao {
+    width: 0px;
+    background-color: rgb(244, 244, 244);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px 0px 0px 10px;
+    text-align: left;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.450);
+    
+    transition: 0.5s;
+    visibility: hidden;
+    position: fixed;
+    overflow-x: hidden;
+    top: 15%;
+    right: 0;
+}
+
+#menucartoes.active #menuconfigcartao {
+    width: 65%;
+    visibility: visible;
+}
+
+#menuconfigcartao button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    color: #C1292E;
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: 0px;
+    border-radius: 5px 10px 10px 0px;
+    cursor: pointer;
+}
+
+
+#menuconfigcartao p {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: left;
+    background-color: #C1292E;
+    color: white;
+    width: 180px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#menuconfigcartao p:hover {
+    background-color: #ec4e53;
+    cursor: pointer;
+}
+
+
+/*
+    Seção PIX
+*/
+
+#mainpix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+#mainpix h1, p {
+    text-align: center;
+}
+
+#mainpix p {
+    margin: 0px 0px 40px 0px;
+    font-size: 1.2em;
+}
+
+#pagarpix {
+    width: 80%;
+    height: 70px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#pagarpix:hover {
+    background-color: rgb(199, 198, 198);
+}
+
+#pagarpix h3 {
+    color: #C1292E;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#fazerpix {
+    background-color: rgb(244, 244, 244);
+    width: 95%;
+    height: 400px;
+    display: none;
+    text-align: center;
+    padding-top: 40px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+
+}
+
+#fazerpix label {
+    margin: 20px;
+    width: 30px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#destino, #chavepix, #valorpix, #senhapix {
+    width: 400px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+
+#botaoenviarpix {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #da3a40;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+#pixenviado {
+    width: 300px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    display: none;
+    text-align: center;
+    box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.777);
+
+    position: fixed;
+    top: 5%;
+    left: 30%;
+}
+
+#pixenviado p {
+    margin: 25px;
+}
+
+#pixenviado button {
+    background-color: transparent;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    padding: 0px;
+    margin: 5px 0px 0px 0px;
+}
+
+#pixenviado button:hover {
+    cursor: pointer;
+}
+
+#pixenviado a {
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    background-color: transparent;
+    color: #C1292E;
+    padding: 0px;
+}
+
+#pixenviado h2 {
+    color: #C1292E;
+}
+
+#valorenviado, #receptordopix, #datadopix {
+    font-weight: bold;
+}
+
+#fecharmenupix {
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    color: #C1292E;
+    cursor: pointer;
+}
+
+
+#receberpix {
+    width: 100%;
+    height: 70px;
+    background-color: lightgrey;
+}
+
+#receberpix {
+    margin: 40px 0px 10px 0px;
+    width: 80%;
+    height: 70px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#receberpix:hover {
+    background-color: rgb(199, 198, 198);
+}
+
+#receberpix h3 {
+    color: #C1292E;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#qrcodepix {
+    background-color: rgb(244, 244, 244);
+    width: 95%;
+    height: 350px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+
+}
+
+#qrcodepix p {
+    color: #C1292E;
+    margin: 30px;
+}
+
+#codigoqr {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: 3px solid #C1292E;
+    border-radius: 10px;
+    background-image: url(../imagens/qrcode.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#botaoqrcode {
+    font-size: 1.6em;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #C1292E;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+#maisopcoes {
+    width: 400px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+#maisopcoes button {
+    margin: 20px;
+    width: 90px;
+    height: 90px;
+    font-weight: bold;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #C1292E;
+    cursor: pointer;
+}
+
+#maisopcoes button:hover {
+    background-color: #ec4e53;
+}
+
+/*
+    Seção Investimentos
+*/
+
+#maininvest {
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+#maininvest  h2 {
+    font-size: 2.5em;
+}
+
+#maininvest > h2 > a {
+    color: #C1292E;
+    text-decoration: none;
+    cursor: text;
+    font-size: 0.7em;
+}
+
+.chamada {
+    margin-top: 50px;
+    color: white;
+    background-color: #C1292E;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 15px;
+    width: 400px;
+    border-radius: 3px;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.450);
+}
+
+#opcoesinvest {
+    margin-top: 150px;
+    width: 550px;
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#opcoesinvest div {
+    background-color: #C1292E;
+    color: white;
+    width: 90px;
+    height: 90px;
+    margin: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#opcoesinvest div:hover { 
+    box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.578);
+}
+
+
+#fototesouro {
+    background-image: url(../imagens/insights.png);
+}
+
+#fotofundoimobiliario {
+    background-image: url(../imagens/mercado.png);
+}
+
+#fotoprevidencia {
+    background-image: url(../imagens/carteira.png);
+}
+
+#sectioninvest {
+    background-color: white;
+}
+
+
+#enqueteperfil {
+    margin: 70px 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ecebeb;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#abrirenquete {
+    background-color: #C1292E;
+    color: #ffffff;
+    font-weight: bold;
+    cursor:pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#cancelaenquete {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: none;
+    color: #C1292E;
+    font-size: 1.6em;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+
+
+#abrirenquete:hover {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.762);
+}
+
+#enquete {
+    margin: 40px 10px;
+    text-align: left;
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    background-color: #efefef;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.57);
+}
+
+#enquete h4 {
+    margin-top: 15px 0px;
+    background-color: #C1292E;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#enquete input {
+    margin-bottom: 10px;
+}
+
+
+#enquete #verificarperfil {
+    margin-top: 50px;
+    margin-left: 35%;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #C1292E;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.611);
+}
+
+
+
+#resultadoenquete {
+    width: 500px;
+    margin: auto;
+    margin-bottom: 100px;
+    height: 300px;
+    background-color: #efefef;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: -4px 4px 5px rgba(0, 0, 0, 0.57);
+    display: none;
+}
+
+#resultadoenquete h4 {
+    margin: 0px;
+    font-size: 1.3em;
+}
+
+#resultadoenquete p {
+    margin: 0px;
+    font-size: 1.2em;
+    padding: 20px;
+    text-align: justify;
+}
+
+#resultadoenquete button {
+    margin-top: 25px;
+    font-size: 1.7em;
+    background-color: transparent;
+    color: #C1292E;
+    border: none;
+    cursor: pointer;
+}
+
