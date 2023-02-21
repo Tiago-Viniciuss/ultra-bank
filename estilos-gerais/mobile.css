@@ -505,10 +505,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 3px solid #C1292E;
     border-radius: 5px 0px 0px 10px;
     text-align: left;
-    box-shadow: -7px 7px 5px rgba(0, 0, 0, 0.779);
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.450);
     
     transition: 0.5s;
     visibility: hidden;
@@ -839,7 +838,7 @@ header {
     width: 80px;
     height: 80px;
     margin: 15px;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 50%;
     text-align: center;
     background-size: cover;
