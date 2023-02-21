@@ -355,6 +355,9 @@ header {
     text-decoration: none;
 }
 
+#homegeral:hover {
+    transform: scale(1.1);
+}
 
 /*
     Seção Cartões
