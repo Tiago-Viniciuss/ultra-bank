@@ -3,6 +3,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    background-color: white;
 }
 
 
@@ -110,6 +111,7 @@ header {
 
 #main {
     padding: 20px;
+    background-color: white;
 }
 
 #principal {
@@ -119,6 +121,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    background-color: white;
 }
 
 #principal button {
@@ -800,6 +803,7 @@ header {
 #maininvest {
     text-align: center;
     margin-bottom: 50px;
+    background-color: white;
 }
 
 #maininvest  h2 {
