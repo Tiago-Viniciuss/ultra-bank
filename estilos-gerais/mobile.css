@@ -209,6 +209,11 @@ header {
     align-items: center;
 }
 
+#abrirmenu {
+    width: 25px;
+    margin: auto;
+}
+
 #abrirmenu button {
     background-color: transparent;
     border: none;
