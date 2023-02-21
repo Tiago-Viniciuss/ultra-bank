@@ -96,9 +96,6 @@ body {
     cursor: pointer;
 }
 
-#botaologin:hover {
-    transform: scale(1.1);
-}
 
 form a {
     font-weight: bolder;
@@ -181,7 +178,6 @@ form a:hover {
 }
 
 #dadosbutton:hover {
-    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -207,6 +203,4 @@ form a:hover {
     margin-top: 15px;
 }
 
-.material-symbols-outlined:hover {
-    transform: scale(1.1);
-}
+
