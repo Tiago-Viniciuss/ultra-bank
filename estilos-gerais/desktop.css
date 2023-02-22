@@ -120,8 +120,8 @@ hr {
 }
 
 #principal {
-    width: 450px;
-    height: 150px;
+    width: 550px;
+    height: 250px;
     margin: auto;
     margin-top: 150px;
     display: flex;
@@ -219,7 +219,7 @@ hr {
     width: 490px;
     height: 550px;
     margin: auto;
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -246,6 +246,7 @@ hr {
 .operaçoes {
     width: 120px;
     height: 120px;
+    margin: 10px;
     background-color: #C1292E;
     display: flex;
     justify-content: center;
@@ -386,12 +387,13 @@ hr {
 }
 
 .cabeçalhocartoes h1 {
-    font-size: 2.5em;
+    font-size: 3.5em;
     color: #ffffff;
     text-align: center;
 }
 
 #sectioncartoes h2 {
+    font-size: 2em;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 0px;
@@ -401,7 +403,7 @@ hr {
     margin-top: 5px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 #fundocartaocredito {
@@ -537,7 +539,7 @@ hr {
 }
 
 #menucartoes.active #menuconfigcartao {
-    width: 65%;
+    width: 35%;
     visibility: visible;
 }
 
@@ -595,7 +597,7 @@ hr {
 }
 
 #pagarpix {
-    width: 80%;
+    width: 60%;
     height: 70px;
     background-color: rgb(235, 235, 235);
     border-radius: 20px;
@@ -603,6 +605,7 @@ hr {
 }
 
 #pagarpix:hover {
+    transform: scale(1.1);
     background-color: rgb(199, 198, 198);
 }
 
@@ -614,7 +617,7 @@ hr {
 
 #fazerpix {
     background-color: rgb(244, 244, 244);
-    width: 95%;
+    width: 75%;
     height: 400px;
     display: none;
     text-align: center;
@@ -652,7 +655,9 @@ hr {
     border-radius: 5px;
 }
 
-
+#botaoenviarpix:hover {
+    transform: scale(1.1);
+}
 
 #pixenviado {
     width: 300px;
@@ -664,7 +669,7 @@ hr {
 
     position: fixed;
     top: 5%;
-    left: 30%;
+    left: 40%;
 }
 
 #pixenviado p {
@@ -720,7 +725,7 @@ hr {
 
 #receberpix {
     margin: 40px 0px 10px 0px;
-    width: 80%;
+    width: 60%;
     height: 70px;
     background-color: rgb(235, 235, 235);
     border-radius: 20px;
@@ -728,6 +733,7 @@ hr {
 }
 
 #receberpix:hover {
+    transform: scale(1.1);
     background-color: rgb(199, 198, 198);
 }
 
@@ -779,7 +785,9 @@ hr {
     cursor: pointer;
 }
 
-
+#botaoqrcode:hover {
+    transform: scale(1.1);
+}
 
 #maisopcoes {
     width: 400px;
@@ -802,7 +810,9 @@ hr {
 }
 
 #maisopcoes button:hover {
-    background-color: #ec4e53;
+    background-color: #C1292E;
+    transform: scale(1.1);
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.726);
 }
 
 /*
@@ -866,6 +876,7 @@ hr {
 
 #opcoesinvest div:hover { 
     box-shadow: -3px 3px 7px rgba(0, 0, 0, 0.578);
+    transform: scale(1.1);
 }
 
 
@@ -903,6 +914,10 @@ hr {
     border-radius: 5px;
 }
 
+#abrirenquete:hover {
+    transform: scale(1.1);
+}
+
 #cancelaenquete {
     position: relative;
     top: 0;
@@ -915,7 +930,9 @@ hr {
     cursor: pointer;
 }
 
-
+#cancelaenquete:hover {
+    transform: scale(1.1);
+}
 
 #abrirenquete:hover {
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.762);
@@ -924,7 +941,7 @@ hr {
 #enquete {
     margin: 40px 10px;
     text-align: left;
-    width: 80%;
+    width: 50%;
     height: 600px;
     margin: auto;
     background-color: #efefef;
@@ -949,7 +966,7 @@ hr {
 
 #enquete #verificarperfil {
     margin-top: 50px;
-    margin-left: 35%;
+    margin-left: 45%;
     font-weight: bold;
     padding: 10px;
     border-radius: 5px;
