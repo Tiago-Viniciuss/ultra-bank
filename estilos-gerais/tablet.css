@@ -19,6 +19,10 @@ header {
     font-size: 2.5em;
 }
 
+#acesseversaomobile {
+    display: none;
+}
+
 #boxsaldo {
     font-size: 1.3em;
     font-weight: bold;

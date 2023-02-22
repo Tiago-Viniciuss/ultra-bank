@@ -22,7 +22,7 @@ body {
 }
 
 #backgroundtema {
-    background-image: url(../imagens/team.png);
+    background-image: url(../imagens/temadesktop.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@ body {
 }
 
 #formbox {
-    padding: 10px;
+    padding: 20px;
     margin: auto;
     width: 350px;
     height: 0px;
@@ -112,7 +112,7 @@ body {
 }
 
 #formbox.active {
-    height: 200px;
+    height: 180px;
     visibility: visible;
 }
 
