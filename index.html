@@ -6,22 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos-tela-login/login-mobile.css">
     <link rel="stylesheet" href="estilos-tela-login/login-tablet.css" media="(min-width: 768px) and (max-width: 1200px)">
+    <link rel="stylesheet" href="estilos-tela-login/login-desktop.css" media="(min-width: 1200px)">
     <title>Ultra Bank</title>
 </head>
 <body>
-    <div id="container">
-        <main id="principal">
-            
-            <form method="post" id="formbox">
-                <h1>Ultra Bank</h1>
-                <label for="usuario">Usuário</label><input type="number" name="usuario" id="usuario" placeholder="Digite sua conta" required> 
-                <label for="senha">Senha</label><input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
-                <input type="submit" value="Entrar"  id="botaologin" onclick="fazerLogin(); return false">
-                <button id="senhabtn"><a href="esquecisenha.html">Esqueci minha senha</a></button>
-            </form>
-        </main>
-        <footer id="rodape">
-        </footer>
+    <div id="backgroundtema">
+        <h1 id="tituloultrabank">Ultra Bank</h1>
+        <section id="sectionlogin">
+            <button>Abrir Conta</button> <button id="acessarcontadesktop" onclick="abrirmenuConta()">Acesse sua conta</button> <button>Ultra Empresas ®</button> <button>Conteúdos</button>
+        </section>
+        <div id="container" >
+            <main id="principal">
+        
+                <form method="post" id="formbox">
+                    <h1>Ultra Bank</h1>
+                    <label for="usuario">Usuário</label><input type="number" name="usuario" id="usuario" placeholder="Digite sua conta" required>
+                    <label for="senha">Senha</label><input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                    <input type="submit" value="Entrar"  id="botaologin" onclick="fazerLogin(); return false">
+                    <button id="senhabtn"><a href="esquecisenha.html">Esqueci minha senha</a></button>
+                </form>
+            </main>
+            <footer id="rodape">
+            </footer>
+        </div>
     </div>
     <script src="login.js"></script>
 </body>

@@ -1,109 +1,171 @@
-@charset "UTF-8";
 
 /*
     Tela de login
 */
 
 body {
-    margin: 30px;
+    margin: 0px;
     padding: 0px;
-    height: 100%;
     background-color: #C1292E;
+    width: 100%;
+}
+
+#tituloultrabank {
+    display: block;
+    font-size: 6.5em;
+    color: #C1292E;
+    position: fixed;
+    margin: 30px 0px 0px 75px;
+    top: 0;
+    left: 0;
+    text-shadow: -2px 2px 2px white;
+}
+
+#backgroundtema {
+    background-image: url(../imagens/team.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
 
 #container {
-    display: grid;
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-    border-radius: 15px;
-    gap: 2px;
-    grid-template-areas: 
-                'main main main'
-                'footer footer footer';
+    width: 400px;
+    height: 200px;
+    padding: 15px;
+    display: flex;
+    justify-content: end;
+    margin: 0px 20px 100px 0px;
+    background-color: transparent;
 }
 
-#container header, main, footer {
-    background-color: #ffffff;
-    padding: 20px;
-}
-
-#cabeçalho {
-    grid-area: header;
+#sectionlogin {
+    background-color: rgba(0, 0, 0, 0.608);
+    height: 50px;
+    margin: 10px 0px 0px 0px;
+    width: 660px;
     text-align: center;
-    margin: 0px;
+    border-radius: 5px 0px 0px 5px;
+    
+
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sectionlogin button {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 8px 15px;
+    padding: 2px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#sectionlogin button:hover {
+    transform: scale(1.2);
 }
 
 #formbox h1 {
-    font-size: 2.5em;
-    color: #C1292E;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 100px 0px 0px 0px;
-    margin-bottom: 70px;
-    text-shadow: 1px 1px 1px black;
+    display: none;
 }
 
 #principal {
-    grid-area: main;
-    height: 500px;
+    height: 200px;
+    width: 400px;
+    margin: 0px;
+    display: none;
+
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0px;
-    margin-top: 0px;
+    background-color: transparent;
 }
 
 #formbox {
+    padding: 10px;
     margin: auto;
-    width: 250px;
-    height: 350px;
-    margin-bottom: 300px;
+    width: 350px;
+    height: 0px;
+    margin-bottom: 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.608);
+    border-radius: 5px;
+
+    transition: 0.5s;
+    overflow-y: hidden;
+    visibility: hidden;
+}
+
+#formbox.active {
+    height: 200px;
+    visibility: visible;
 }
 
 #formbox label {
-    width: 400px;
-    margin-bottom: 5px;
+    width: 80px;
+    margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
 }
 
 #usuario {
-    width: 400px;
-    padding: 10px;
+    width: 200px;
+    padding: 2px;
     margin-bottom: 20px;
     border-radius: 5px;
-    background-color: lightgray;
+    background-color: rgb(240, 240, 240);
 }
+
 
 #senha {
-    width: 400px;
-    padding: 10px;
+    width: 200px;
+    padding: 2px;
     margin-bottom: 20px;
     border-radius: 5px;
-    background-color: lightgray;
+    background-color: rgb(240, 240, 240);
 }
 
+
 #botaologin {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     color: white;
-    width: 230px;
-    margin-bottom: 20px;
-    padding: 5px;
+    width: 100px;
+    margin-bottom: 0px;
+    padding: 0px;
     background-color: #C1292E;
     border-radius: 5px;
     cursor: pointer;
 }
 
+#botaologin:hover {
+    transform: scale(1.1);
+}
+
 
 form a {
     font-weight: bolder;
-    font-size: 1.1em;
-    color: #C1292E;
+    font-size: 0.9em;
+    color: #ffffff;
     text-decoration: none;
+    width: 30px;
+    margin: 10px;
 }
 
 form a:hover {
@@ -139,6 +201,7 @@ form a:hover {
     border-radius: 10px;
     width: 600px;
     margin: auto;
+    margin-top: 100px;
 }
 
 
@@ -207,5 +270,6 @@ form a:hover {
     background-color: transparent;
     margin-top: 15px;
 }
+
 
 

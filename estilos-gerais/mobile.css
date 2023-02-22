@@ -14,6 +14,7 @@ header {
     padding: 20px;
 }
 
+
 .cabeçalho h1 {
     color: #ffffff;
     font-size: 2.4em;
@@ -24,7 +25,7 @@ header {
     font-weight: bold;
     background-color: rgb(228, 228, 228);
     border-radius: 3px;
-    width: 140px;
+    width: 160px;
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
@@ -33,6 +34,7 @@ header {
 #saldo {
     padding: 0px;
     margin: 0px;
+    margin-left: 5px;
     visibility: hidden;
 }
 

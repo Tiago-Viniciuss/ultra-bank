@@ -11,6 +11,15 @@ body {
     background-color: #C1292E;
 }
 
+
+#sectionlogin button {
+    display: none;
+}
+
+#tituloultrabank {
+    display: none;
+}
+
 #container {
     display: grid;
     background-color: rgb(255, 255, 255);

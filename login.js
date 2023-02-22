@@ -122,3 +122,13 @@ function fecharmenuCartao() {
         menucartao.classList.toggle('deactivate')
     }
 }
+
+/*
+    LOGIN DESKTOP
+*/
+
+function abrirmenuConta() {
+    var menudesktop = document.getElementById('formbox')
+
+    menudesktop.classList.toggle('active')
+}
