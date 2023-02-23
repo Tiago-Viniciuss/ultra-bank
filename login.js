@@ -1,15 +1,38 @@
 
+function salvarDados() {
+    var nome1 = document.getElementById('nome')
+    var senha1 = document.getElementById('senha')
+
+    var nome = String(nome1.value)
+    var senha = Number(senha1.value)
+    alert(`Parabéns, ${nome}, sua conta foi criada!`)
+
+    localStorage.setItem ('nome', nome)
+    localStorage.setItem ('senha', senha)
+}
+
+
 function fazerLogin() {
-    let usuario = document.getElementById('usuario').value
-    const senha = document.getElementById('senha').value
-   
-    if (usuario == '1234' && senha == '1234') {
+    var usuario1 = document.getElementById('usuario')
+    var senha1 = document.getElementById('senha')
+
+    var nomecheck = String(usuario1.value)
+    var senhacheck = Number(senha1.value)
+    var nomeguardado = localStorage.getItem('nome')
+    var senhaguardada = localStorage.getItem('senha')
+
+    if(nomecheck == nomeguardado && senhacheck == senhaguardada) {
         location.href = 'home.html';
     } else {
-        alert('Insira usuário e senha corretamente!')
+        alert('Ainda não, bicho...')
     }
+    
+
+   
 
 }
+
+
     function gerarDados() {
     var nomeusuario1 = document.getElementById('nome1')
 
@@ -152,8 +175,4 @@ function mostrarSenha() {
     } else {
         senha.setAttribute('type', 'password')
     }
-}
-
-function abrirConta() {
-
 }
