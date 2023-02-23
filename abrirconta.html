@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos-tela-login/login-mobile.css">
+    <link rel="stylesheet" href="estilos-tela-login/login-tablet.css" media="(min-width: 768px) and (max-width: 1200px)">
+    <link rel="stylesheet" href="estilos-tela-login/login-desktop.css" media="(min-width: 1200px)">
+
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <title>Ultra Bank</title>
+</head>
+<body id="aberturacontafundo">
+    <h1 class="tituloultrabank">Ultra Bank</h1>
+    <section id="sectionmenu">
+            <a href="index.html"><button>Home</button> </a><button>Ultra Empresas ®</button> <button>Conteúdos</button>
+    </section> 
+    <article id="articleconta">
+        <h2>Conhece as vantagens de ser Ultra?</h2>
+        <p>A cada dia que passa, buscamos mais qualidade de vida. E um fator determinante para que esse objetivo seja alcançado, é o <strong>tempo</strong>. E nós do Ultra Bank sabemos que seu tempo é <strong>precioso</strong>, por isso estamos aprimorando nossas tecnologias e serviços cada vez mais, garantindo mais automação e menos filas. <br> Desde a abertura da sua conta, passando pelas operações mais simples, como ver o extrato da sua atividade ou fazer uma transferência, até as mais complexas, como fazer um investimento, terás um sistema moderno e ágil. E caso você sinta a necessidade de suporte por telefone ou e-mail, garantimos que o seu tempo de espera será menor que 80% dos bancos mundiais, e podemos provar isso. As vantagens como isenção de taxas em transferêcias nacionais e internacionais, painel para investimentos e muito mais recursos, também te esperam. Pode contar conosco!</p> <button id="cadastrobotao" onclick="cadastroConta()">Abrir Conta Agora</button>
+    </article>
+    <section id="abrircontaform">
+        <form method="post">
+           <label for="nome">Defina um nome de usuário: </label> <input type="text" name="nome" id="nome" required placeholder="Escreva seu nome ou algum apelido" title="Escreva seu nome ou apelido"> <br>
+            <label for="senha">Defina uma senha para acesso:</label> <input type="password" name="senha" id="senha" placeholder="Deve conter no mínimo 6 caracteres" title="Deve conter números e letras" autocomplete="new-password" required minlength="6">
+            <span class="lnr lnr-eye" onclick="mostrarSenha()"></span> <br> <br> <input type="submit" value="CRIAR CONTA" id="criarcontabotao">
+        </form>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>

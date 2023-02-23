@@ -7,19 +7,16 @@
 body {
     margin: 30px;
     padding: 0px;
-    height: 100%;
     background-color: #C1292E;
 }
 
 #container {
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(255, 255, 255);
     padding: 5px;
     border-radius: 15px;
-    gap: 2px;
-    grid-template-areas: 
-                'main main main'
-                'footer footer footer';
 }
 
 #container header, main, footer {
@@ -27,11 +24,6 @@ body {
     padding: 20px;
 }
 
-#cabeçalho {
-    grid-area: header;
-    text-align: center;
-    margin: 0px;
-}
 
 #formbox h1 {
     font-size: 2.5em;
@@ -43,7 +35,6 @@ body {
 }
 
 #principal {
-    grid-area: main;
     height: 500px;
     display: flex;
     justify-content: center;

@@ -132,3 +132,28 @@ function abrirmenuConta() {
 
     menudesktop.classList.toggle('active')
 }
+
+function cadastroConta() {
+    var formulariocadastro = document.getElementById('abrircontaform')
+    var article = document.getElementById('articleconta')
+    var botao = document.getElementById('cadastrobotao')
+
+    formulariocadastro.style.display = 'flex'
+    article.style.display = 'none'
+    botao.style.display = 'none'
+
+}
+
+function mostrarSenha() {
+    var senha = document.getElementById('senha')
+
+    if(senha.getAttribute('type') == 'password') {
+        senha.setAttribute('type', 'text')
+    } else {
+        senha.setAttribute('type', 'password')
+    }
+}
+
+function abrirConta() {
+
+}

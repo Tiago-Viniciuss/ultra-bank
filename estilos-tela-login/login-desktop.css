@@ -10,7 +10,11 @@ body {
     width: 100%;
 }
 
-#tituloultrabank {
+::-webkit-scrollbar {
+    display: none;
+}
+
+.tituloultrabank {
     display: block;
     font-size: 6.5em;
     color: #C1292E;
@@ -93,7 +97,6 @@ body {
 }
 
 #formbox {
-    padding: 20px;
     margin: auto;
     width: 350px;
     height: 0px;
@@ -112,6 +115,7 @@ body {
 }
 
 #formbox.active {
+    padding: 20px;
     height: 180px;
     visibility: visible;
 }
@@ -141,6 +145,15 @@ body {
     background-color: rgb(240, 240, 240);
 }
 
+#mostrarsenha {
+    color: rgb(0, 0, 0);
+    position: relative;
+    right: 35px;
+    bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
 
 #botaologin {
     font-size: 1em;
@@ -272,4 +285,152 @@ form a:hover {
 }
 
 
+/*
+    Seção Abrir Conta
+*/
 
+
+
+#sectionmenu {
+    background-color: rgba(0, 0, 0, 0.608);
+    height: 50px;
+    margin: 10px 0px 0px 0px;
+    width: 500px;
+    text-align: center;
+    border-radius: 5px 0px 0px 5px;
+    
+
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sectionmenu button {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 8px 15px;
+    padding: 2px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#sectionmenu button:hover {
+    transform: scale(1.2);
+}
+
+#sectionmenu a {
+    text-decoration: none;
+}
+
+#aberturacontafundo {
+    height: 800px;
+    background-image: url(../imagens/aberturaconta2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+#articleconta {
+    height: 400px;
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.800);
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+#articleconta h2 {
+    text-align: center;
+    color: white;
+}
+
+#articleconta p {
+    color: white;
+    padding: 20px;
+    text-indent: 25px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+#articleconta button {
+    background-color: #C1292E;
+    color: #ffffff;
+    font-weight: bold;
+    position: absolute;
+    right: 31%;
+    bottom:2%;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+article button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#abrircontaform {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    height: 400px;
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.800);
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+
+#abrircontaform > form > label {
+    color: white;
+    font: 0.87em "typewriter", sans-serif;
+}
+
+#abrircontaform > form > input {
+    border-radius: 5px;
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+#abrircontaform input,
+textarea {
+  padding: 0 10px;
+  margin: 0;
+  width: 80%;
+}
+
+#abrircontaform input:invalid {
+   background-color: #ffffff;
+}
+
+#abrircontaform #criarcontabotao {
+    width: 160px;
+    position: relative;
+    left: 22%;
+    background-color: #C1292E;
+    color: white;
+    font-weight: bold;
+}
+
+#abrircontaform #criarcontabotao:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.lnr-eye {
+    color: black;
+    position: relative;
+    right: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
