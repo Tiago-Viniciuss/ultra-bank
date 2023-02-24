@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos-tela-login/login-mobile.css">
+    <link rel="stylesheet" href="estilos-tela-login/login-mobile.css" media="(max-width: 1200px)">
     <link rel="stylesheet" href="estilos-tela-login/login-tablet.css" media="(min-width: 768px) and (max-width: 1200px)">
     <link rel="stylesheet" href="estilos-tela-login/login-desktop.css" media="(min-width: 1200px)">
 
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Ultra Bank</title>
 </head>
 <body id="aberturacontafundo">
+    <button id="burguerconta" class="material-symbols-outlined" onclick="abrirOpcoes()">menu</button>
     <h1 class="tituloultrabank">Ultra Bank</h1>
     <section id="sectionmenu">
             <a href="index.html"><button>Home</button> </a><button>Ultra Empresas ®</button> <button>Conteúdos</button>
@@ -23,8 +26,8 @@
     <section id="abrircontaform">
         <form method="post">
            <label for="nome">Defina um nome de usuário: </label> <input type="text" name="nome" id="nome" required placeholder="Escreva seu nome ou algum apelido" title="Escreva seu nome ou apelido"> <br>
-            <label for="senha">Defina uma senha para acesso:</label> <input type="password" name="senha" id="senha" placeholder="Deve conter no mínimo 6 caracteres" title="Deve conter números e letras" autocomplete="new-password" required minlength="6">
-            <span class="lnr lnr-eye" onclick="mostrarSenha()"></span> <br> <br> <input type="button" id="criarcontabotao" value="CRIAR CONTA" onclick="salvarDados()">
+            <label for="senha">Defina uma senha para acesso:</label> <input type="password" name="senha" id="senha" placeholder="Deve conter no mínimo 6 números" title="Deve conter somente números" autocomplete="new-password" required minlength="6">
+            <span class="lnr lnr-eye" onclick="mostrarSenha()"></span> <br> <br> <input type="button" id="criarcontabotao" value="Criar conta" onclick="salvarDados()">
         </form>
     </section>
     <script src="login.js"></script>

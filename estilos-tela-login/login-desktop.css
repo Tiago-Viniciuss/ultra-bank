@@ -98,7 +98,7 @@ body {
 
 #formbox {
     margin: auto;
-    width: 350px;
+    width: 330px;
     height: 0px;
     margin-bottom: 0px;
     display: flex;
@@ -227,6 +227,10 @@ form a:hover {
     margin-bottom: 10px;
 }
 
+#mainsenha a {
+    color: #C1292E;
+}
+
 #senhabtn {
     background-color: transparent;
     border: none;
@@ -338,6 +342,10 @@ form a:hover {
     align-items: end;
 }
 
+.abrircontamobile {
+    display: none;
+}
+
 #articleconta {
     height: 400px;
     width: 600px;
@@ -426,11 +434,10 @@ textarea {
     cursor: pointer;
 }
 
-.lnr-eye {
-    color: black;
-    position: relative;
-    right: 35px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 5px;
+#formbox .lnr-eye {
+    display: none;
+}
+
+#burguerconta {
+    display: none;
 }

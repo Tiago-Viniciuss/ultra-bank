@@ -6,6 +6,13 @@ body {
     background-color: white;
 }
 
+#saudacao {
+    color: white;
+    font-size: 1em;
+    position: absolute;
+    right: 25px;
+    top: 140px;
+}
 
 header {
     background-color: #C1292E;

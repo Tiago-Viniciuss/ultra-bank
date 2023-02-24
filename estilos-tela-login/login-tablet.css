@@ -142,6 +142,10 @@ form a:hover {
     margin-bottom: 10px;
 }
 
+#mainsenha a {
+    color: #C1292E;
+}
+
 #senhabtn {
     background-color: transparent;
     border: none;
@@ -159,6 +163,10 @@ form a:hover {
     width: 220px;
     margin-top: 50px;
     margin-bottom: 30px;
+}
+
+#nome1::placeholder {
+    font-size: 1em;
 }
 
 #dadosbutton {
@@ -199,4 +207,190 @@ form a:hover {
     margin-top: 15px;
 }
 
+.lnr-eye {
+    color: black;
+    position: relative;
+    left: 150px;
+    bottom: 52px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
 
+
+/*
+    Seção Abrir Conta
+*/
+
+
+.abrircontamobile {
+    margin-bottom: 15px;
+    border: 0px;
+    background-color: transparent;
+}
+
+#burguerconta {
+    color: rgb(0, 0, 0);
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+#sectionmenu {
+    background-color: rgb(239, 239, 239);
+    color: black;
+    height: 50px;
+    margin: 10px 0px 0px 0px;
+    width:0px;
+    text-align: center;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 1em;
+    
+
+    transition: 0.5s;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sectionmenu.active {
+    visibility: visible;
+    width: 70%;
+}
+
+#sectionmenu button {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 8px 15px;
+    padding: 0px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#sectionmenu button:hover {
+    transform: none;
+}
+
+#sectionmenu a {
+    text-decoration: none;
+}
+
+#aberturacontafundo {
+    height: 800px;
+    background-color: #C1292E;
+    display: block;
+    margin: auto;
+}
+
+#articleconta {
+    height: 400px;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: auto;
+  
+}
+
+#articleconta h2 {
+    margin-top: 120px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+#articleconta p {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-indent: 25px;
+    text-align: justify;
+    line-height: 1.2em;
+}
+
+#cadastrobotao {
+    background-color: #C1292E;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    position: absolute;
+    right: 20%;
+
+}
+
+#cadastrobotao:hover {
+    transform: none;
+    cursor: pointer;
+}
+
+#abrircontaform {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    height: 400px;
+    width: 600px;
+    background-color: rgba(243, 241, 241, 0.999);
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+
+#abrircontaform > form > label {
+    color: rgb(0, 0, 0);
+    font: 0.87em "typewriter", sans-serif;
+    font-weight: bold;
+}
+
+#abrircontaform > form > input {
+    border-radius: 5px;
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+#abrircontaform input,
+textarea {
+  padding: 0 10px;
+  margin: 0;
+  width: 80%;
+}
+
+#abrircontaform input:invalid {
+   background-color: #ffffff;
+}
+
+#abrircontaform #criarcontabotao {
+    width: 160px;
+    position: relative;
+    left: 22%;
+    background-color: #C1292E;
+    color: white;
+    font-weight: bold;
+}
+
+#abrircontaform #criarcontabotao:hover {
+    transform: none;
+    cursor: pointer;
+}
+
+.lnr-eye {
+    color: black;
+    position:relative;
+    left: 5px;
+    top: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0px;
+    z-index: 99;
+}

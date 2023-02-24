@@ -9,6 +9,7 @@ function salvarDados() {
 
     localStorage.setItem ('nome', nome)
     localStorage.setItem ('senha', senha)
+    location.href = 'index.html';
 }
 
 
@@ -21,30 +22,39 @@ function fazerLogin() {
     var nomeguardado = localStorage.getItem('nome')
     var senhaguardada = localStorage.getItem('senha')
 
+
     if(nomecheck == nomeguardado && senhacheck == senhaguardada) {
         location.href = 'home.html';
     } else {
-        alert('Ainda não, bicho...')
+        alert('Usuário ou senha incorreto')
     }
     
-
-   
-
 }
 
 
-    function gerarDados() {
-    var nomeusuario1 = document.getElementById('nome1')
-
-    var nomeusuario = nomeusuario1.value
-
-    var dados = document.getElementById('dadosdeacesso')
-
-    if (nomeusuario == 0) {
-        alert('Digite o seu nome!')
-    } else {
-        dados.innerHTML = `<p id:"dados">Olá, <strong>${nomeusuario}</strong>! <br> <br> Seja bem-vindo(a) ao Ultra Bank. <br> <br> Seus dados de acesso são: <br> <br> Usuário: <strong>1234</strong> <br> Senha: <strong>1234</strong></p>`
+    function mostrarSaudacao() {
+        var saudacao = document.getElementById('saudacao')
+        nomeguardado = localStorage.getItem('nome')
+        
+        saudacao.innerText = `Seja bem-vindo(a), ${nomeguardado}!`
     }
+
+    function gerarDados() {
+    var usuario = document.getElementById('nome1')
+    var nomeguardado = localStorage.getItem('nome')
+    var senhaguardada = localStorage.getItem('senha')
+    var resultado = document.getElementById('resultado')
+
+    var nome = String(usuario.value)
+    if(nome.length == 0) {
+        alert('Digite um nome válido!')
+    } else if(nome == nomeguardado) {
+        resultado.innerHTML = `Tudo bem, ${nomeguardado}? Sua senha de acesso é <strong>${senhaguardada}</strong>. <br> <br> Lembre-se de guarda-la!`
+    } else {
+        resultado.innerHTML = 'Você errou seu nome de usuário ou talvez você ainda não possui cadastro. Abra uma conta agora mesmo: <br> <br> <a href="abrirconta.html">Através deste link, podes abrir sua conta gratuitamente!</a>'
+    }
+    
+
 
     }
    
@@ -175,4 +185,10 @@ function mostrarSenha() {
     } else {
         senha.setAttribute('type', 'password')
     }
+}
+
+function abrirOpcoes() {
+    var menu = document.getElementById('sectionmenu')
+
+    menu.classList.toggle('active')
 }
