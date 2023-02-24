@@ -6,6 +6,7 @@ function salvarDados() {
     var nome = String(nome1.value)
     var senha = Number(senha1.value)
     alert(`Parabéns, ${nome}, sua conta foi criada!`)
+    
 
     localStorage.setItem ('nome', nome)
     localStorage.setItem ('senha', senha)
@@ -182,4 +183,10 @@ function abrirOpcoes() {
     var menu = document.getElementById('sectionmenu')
 
     menu.classList.toggle('active')
+}
+
+function textoConta() {
+    var artigo = document.getElementById('articleconta')
+
+    artigo.classList.toggle('activate')
 }

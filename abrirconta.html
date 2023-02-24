@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Ultra Bank</title>
 </head>
-<body id="aberturacontafundo">
+<body id="aberturacontafundo" onload="textoConta()">
     <button id="burguerconta" class="material-symbols-outlined" onclick="abrirOpcoes()">menu</button>
     <h1 class="tituloultrabank">Ultra Bank</h1>
     <section id="sectionmenu">
@@ -21,12 +21,12 @@
     </section> 
     <article id="articleconta">
         <h2>Conhece as vantagens de ser Ultra?</h2>
-        <p>A cada dia que passa, buscamos mais qualidade de vida. E um fator determinante para que esse objetivo seja alcançado, é o <strong>tempo</strong>. E nós do Ultra Bank sabemos que seu tempo é <strong>precioso</strong>, por isso estamos aprimorando nossas tecnologias e serviços cada vez mais, garantindo mais automação e menos filas. <br> Desde a abertura da sua conta, passando pelas operações mais simples, como ver o extrato da sua atividade ou fazer uma transferência, até as mais complexas, como fazer um investimento, terás um sistema moderno e ágil. E caso você sinta a necessidade de suporte por telefone ou e-mail, garantimos que o seu tempo de espera será menor que 80% dos bancos mundiais, e podemos provar isso. As vantagens como isenção de taxas em transferêcias nacionais e internacionais, painel para investimentos e muito mais recursos, também te esperam. Pode contar conosco!</p> <button id="cadastrobotao" onclick="cadastroConta()">Abrir Conta Agora</button>
+        <p>A cada dia que passa, buscamos mais qualidade de vida. E um fator determinante para que esse objetivo seja alcançado, é o <strong>tempo</strong>. E nós do Ultra Bank sabemos que seu tempo é <strong>precioso</strong>, por isso estamos aprimorando nossas tecnologias e serviços cada vez mais, garantindo mais automação e menos filas. <br> Desde a abertura da sua conta, passando pelas operações mais simples, como ver o extrato da sua atividade ou fazer uma transferência, até as mais complexas, como fazer um investimento, terás um sistema moderno e ágil. E caso você sinta a necessidade de suporte por telefone ou e-mail, garantimos que o seu tempo de espera será menor que 80% dos bancos mundiais, e podemos provar isso. As vantagens como isenção de taxas em transferêcias nacionais e internacionais, painel para investimentos e muito mais recursos, também te esperam. Pode contar conosco! <button id="cadastrobotao" onclick="cadastroConta()">Abrir Conta Agora</button> </p> 
     </article>
     <section id="abrircontaform">
         <form method="post">
            <label for="nome">Defina um nome de usuário: </label> <input type="text" name="nome" id="nome" required placeholder="Escreva seu nome ou algum apelido" title="Escreva seu nome ou apelido"> <br>
-            <label for="senha">Defina uma senha para acesso:</label> <input type="password" name="senha" id="senha" placeholder="Deve conter no mínimo 6 números" title="Deve conter somente números" autocomplete="new-password" required minlength="6">
+            <label for="senha">Defina uma senha para acesso:</label> <input type="password" name="senha" id="senha" placeholder="Digite a sua senha para acesso" title="Digite a sua senha para acesso" autocomplete="new-password" required minlength="6">
             <br> <br> <input type="button" id="criarcontabotao" value="Criar conta" onclick="salvarDados()">
         </form>
     </section>

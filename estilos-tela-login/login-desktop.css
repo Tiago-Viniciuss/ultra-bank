@@ -7,7 +7,7 @@ body {
     margin: 0px;
     padding: 0px;
     background-color: #C1292E;
-    width: 100%;
+    width: 100vw;
 }
 
 ::-webkit-scrollbar {
@@ -27,10 +27,10 @@ body {
 
 #backgroundtema {
     background-image: url(../imagens/temadesktop.jpg);
-    background-position: center;
+    background-position: end;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 800px;
+    
 
     display: flex;
     justify-content: end;
@@ -43,7 +43,7 @@ body {
     padding: 15px;
     display: flex;
     justify-content: end;
-    margin: 0px 20px 100px 0px;
+    margin: 0px 20px 200px 0px;
     background-color: transparent;
 }
 
@@ -94,6 +94,9 @@ body {
     align-items: center;
     padding: 0px;
     background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 40px;
 }
 
 #formbox {
@@ -332,9 +335,8 @@ form a:hover {
 }
 
 #aberturacontafundo {
-    height: 800px;
-    background-image: url(../imagens/aberturaconta2.jpg);
-    background-position: center;
+    background-image: url(../imagens/backgroundconta.jpg);
+    background-position: end;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -347,11 +349,22 @@ form a:hover {
 }
 
 #articleconta {
-    height: 400px;
+    height: 0px;
     width: 600px;
     background-color: rgba(0, 0, 0, 0.800);
     border-radius: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+    position: absolute;
+    bottom: 0;
+
+    overflow-y: hidden;
+    visibility: hidden;
+    transition: 2s;
+}
+
+#articleconta.activate {
+    height: 400px;
+    visibility: visible;
 }
 
 #articleconta h2 {
@@ -371,10 +384,7 @@ form a:hover {
     background-color: #C1292E;
     color: #ffffff;
     font-weight: bold;
-    position: absolute;
-    right: 31%;
-    bottom:2%;
-    margin: 10px;
+    margin: 10px 30px;
     border-radius: 5px;
 }
 
@@ -394,7 +404,9 @@ article button:hover {
     width: 600px;
     background-color: rgba(0, 0, 0, 0.800);
     border-radius: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
 }
 
 
