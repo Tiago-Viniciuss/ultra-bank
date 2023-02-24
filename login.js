@@ -177,15 +177,6 @@ function cadastroConta() {
 
 }
 
-function mostrarSenha() {
-    var senha = document.getElementById('senha')
-
-    if(senha.getAttribute('type') == 'password') {
-        senha.setAttribute('type', 'text')
-    } else {
-        senha.setAttribute('type', 'password')
-    }
-}
 
 function abrirOpcoes() {
     var menu = document.getElementById('sectionmenu')
