@@ -296,7 +296,7 @@ form a:hover {
 }
 
 #articleconta {
-    height: 690px;
+    height: 720px;
     width: 80%;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -390,15 +390,4 @@ textarea {
 #abrircontaform #criarcontabotao:hover {
     transform: none;
     cursor: pointer;
-}
-
-.lnr-eye {
-    color: black;
-    position:relative;
-    left: 5px;
-    top: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 0px;
-    z-index: 99;
 }

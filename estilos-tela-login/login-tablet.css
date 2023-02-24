@@ -384,13 +384,3 @@ textarea {
     cursor: pointer;
 }
 
-.lnr-eye {
-    color: black;
-    position:relative;
-    left: 5px;
-    top: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 0px;
-    z-index: 99;
-}
