@@ -13,6 +13,7 @@ function enviarPix() {
     var chave = document.getElementById('chavepix')
     var valor = document.getElementById('valorpix')
     var senha = document.getElementById('senhapix')
+    var senhaguardada = localStorage.getItem('senha')
     var receptor = document.getElementById('receptordopix')
     var valorenviado = document.getElementById('valorenviado')
     var datapix = document.getElementById('datadopix') 
@@ -24,18 +25,22 @@ function enviarPix() {
     var nome1 = String(nome.value)
     var valor1 = Number(valor.value)
 
-    if (nome.value.length == 0 || chave.value.length < 9 || valor.value.length == 0 || senha.value != '1234' ) {
+    if (nome.value.length == 0 || chave.value.length < 9 || valor.value.length == 0 || senha.value != senhaguardada ) {
         alert('Preencha todos os campos corretamente!')
         botao.style.display = 'none'  
-    }
-    
-    
-    teladopix.style.display = 'none'
+    }  else {
+
+           teladopix.style.display = 'none'
     pixenviado.style.display = 'block'
 
     valorenviado.innerText = `R$${valor1}`
     receptor.innerText = `${nome1}`
     datapix.innerText = datacompleta
+
+    }
+    
+    
+ 
 }
 
 function fecharMenupix() {
