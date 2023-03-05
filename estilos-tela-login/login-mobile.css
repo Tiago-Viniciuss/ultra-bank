@@ -234,11 +234,12 @@ form a:hover {
 }
 
 #burguerconta {
-    color: rgb(11, 11, 11);
+    color: rgb(255, 255, 255);
     position: fixed;
     right: 0;
     top: 0;
     z-index: 100;
+    font-size: 2em;
 }
 
 #sectionmenu {
@@ -325,7 +326,8 @@ form a:hover {
     color: #ffffff;
     font-weight: bold;
     border-radius: 5px;
-    margin: 30px 50px 20px;
+    width: 150px;
+    margin: 20px 0px 0px 80px;
 
 }
 

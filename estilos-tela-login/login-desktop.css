@@ -363,7 +363,7 @@ form a:hover {
 }
 
 #articleconta.activate {
-    height: 400px;
+    height: 420px;
     visibility: visible;
 }
 
@@ -384,7 +384,7 @@ form a:hover {
     background-color: #C1292E;
     color: #ffffff;
     font-weight: bold;
-    margin: 10px 30px;
+    margin: 0px 30px;
     border-radius: 5px;
 }
 
